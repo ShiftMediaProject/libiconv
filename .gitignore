@@ -43,7 +43,6 @@ build/
 *.vssscc
 .builds
 *.pidb
-*.log
 *.scc
 
 # Visual C++ cache files
@@ -154,3 +153,21 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+
+
+*.o
+*.a
+*.lo
+*.la
+.deps
+.libs
+Makefile
+Makefile.in
+config.h
+config.status
+stamp*
+libtool
+include/iconv.h*
+libcharset/include/libcharset.h*
+libcharset/include/localcharset.h*
+POTFILES
