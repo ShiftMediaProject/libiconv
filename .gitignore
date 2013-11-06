@@ -171,3 +171,7 @@ include/iconv.h*
 libcharset/include/libcharset.h*
 libcharset/include/localcharset.h*
 POTFILES
+
+#Ensure files required by SMC msvc builds are included
+!SMC/*.h
+!SMC/*.def
