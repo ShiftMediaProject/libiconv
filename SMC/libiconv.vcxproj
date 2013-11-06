@@ -181,6 +181,26 @@ copy iconv.h $(OutputPath)\include
 mkdir $(OutputPath)\licenses
 copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\lib\config.h (
+del ..\lib\config.h
+)
+if exist ..\libcharset\config.h (
+del ..\libcharset\config.h
+)
+if exist ..\include\iconv.h (
+del ..\include\iconv.h
+)
+if exist ..\libcharset\include\libcharset.h (
+del ..\libcharset\include\libcharset.h
+)
+if exist ..\libcharset\include\localcharset.h (
+del ..\libcharset\include\localcharset.h
+)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -208,6 +228,26 @@ copy iconv.h $(OutputPath)\include
 mkdir $(OutputPath)\licenses
 copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\lib\config.h (
+del ..\lib\config.h
+)
+if exist ..\libcharset\config.h (
+del ..\libcharset\config.h
+)
+if exist ..\include\iconv.h (
+del ..\include\iconv.h
+)
+if exist ..\libcharset\include\libcharset.h (
+del ..\libcharset\include\libcharset.h
+)
+if exist ..\libcharset\include\localcharset.h (
+del ..\libcharset\include\localcharset.h
+)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
     <ClCompile>
@@ -235,6 +275,26 @@ copy iconv.h $(OutputPath)\include
 mkdir $(OutputPath)\licenses
 copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\lib\config.h (
+del ..\lib\config.h
+)
+if exist ..\libcharset\config.h (
+del ..\libcharset\config.h
+)
+if exist ..\include\iconv.h (
+del ..\include\iconv.h
+)
+if exist ..\libcharset\include\libcharset.h (
+del ..\libcharset\include\libcharset.h
+)
+if exist ..\libcharset\include\localcharset.h (
+del ..\libcharset\include\localcharset.h
+)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
     <ClCompile>
@@ -262,6 +322,26 @@ copy iconv.h $(OutputPath)\include
 mkdir $(OutputPath)\licenses
 copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\lib\config.h (
+del ..\lib\config.h
+)
+if exist ..\libcharset\config.h (
+del ..\libcharset\config.h
+)
+if exist ..\include\iconv.h (
+del ..\include\iconv.h
+)
+if exist ..\libcharset\include\libcharset.h (
+del ..\libcharset\include\libcharset.h
+)
+if exist ..\libcharset\include\localcharset.h (
+del ..\libcharset\include\localcharset.h
+)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -301,6 +381,26 @@ copy iconv.h $(OutputPath)\include
 mkdir $(OutputPath)\licenses
 copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\lib\config.h (
+del ..\lib\config.h
+)
+if exist ..\libcharset\config.h (
+del ..\libcharset\config.h
+)
+if exist ..\include\iconv.h (
+del ..\include\iconv.h
+)
+if exist ..\libcharset\include\libcharset.h (
+del ..\libcharset\include\libcharset.h
+)
+if exist ..\libcharset\include\localcharset.h (
+del ..\libcharset\include\localcharset.h
+)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -340,6 +440,26 @@ copy iconv.h $(OutputPath)\include
 mkdir $(OutputPath)\licenses
 copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\lib\config.h (
+del ..\lib\config.h
+)
+if exist ..\libcharset\config.h (
+del ..\libcharset\config.h
+)
+if exist ..\include\iconv.h (
+del ..\include\iconv.h
+)
+if exist ..\libcharset\include\libcharset.h (
+del ..\libcharset\include\libcharset.h
+)
+if exist ..\libcharset\include\localcharset.h (
+del ..\libcharset\include\localcharset.h
+)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
     <ClCompile>
@@ -380,6 +500,26 @@ copy iconv.h $(OutputPath)\include
 mkdir $(OutputPath)\licenses
 copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\lib\config.h (
+del ..\lib\config.h
+)
+if exist ..\libcharset\config.h (
+del ..\libcharset\config.h
+)
+if exist ..\include\iconv.h (
+del ..\include\iconv.h
+)
+if exist ..\libcharset\include\libcharset.h (
+del ..\libcharset\include\libcharset.h
+)
+if exist ..\libcharset\include\localcharset.h (
+del ..\libcharset\include\localcharset.h
+)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
     <ClCompile>
@@ -419,6 +559,26 @@ copy iconv.h $(OutputPath)\include
 mkdir $(OutputPath)\licenses
 copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\lib\config.h (
+del ..\lib\config.h
+)
+if exist ..\libcharset\config.h (
+del ..\libcharset\config.h
+)
+if exist ..\include\iconv.h (
+del ..\include\iconv.h
+)
+if exist ..\libcharset\include\libcharset.h (
+del ..\libcharset\include\libcharset.h
+)
+if exist ..\libcharset\include\localcharset.h (
+del ..\libcharset\include\localcharset.h
+)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\libcharset\lib\localcharset.c" />
