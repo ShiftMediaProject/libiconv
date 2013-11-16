@@ -4,6 +4,6 @@ ChangeLog	merge=merge-changelog
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 #* text=auto
-*.sln       text=auto
-*.vcxproj   text=auto
-*.vcproj    text=auto
+SMC/*.sln       text=auto
+SMC/*.vcxproj   text=auto
+SMC/*.vcproj    text=auto
