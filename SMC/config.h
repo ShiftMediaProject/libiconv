@@ -1,4 +1,3 @@
-/* config.h.in.  Generated from configure.ac by autoheader.  */
 
 /* Define to the number of bits in type 'ptrdiff_t'. */
 #undef BITSIZEOF_PTRDIFF_T
