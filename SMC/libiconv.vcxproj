@@ -164,15 +164,15 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\msvc32\$(TargetName)$(TargetExt)</OutputFile>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutputPath)\include
-copy iconv.h $(OutputPath)\include
-mkdir $(OutputPath)\licenses
-copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
+      <Command>mkdir $(OutDir)\include\msvc
+copy iconv.h $(OutDir)\include\msvc
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist ..\config.h (
@@ -212,15 +212,15 @@ del ..\libcharset\include\localcharset.h
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\msvc64\$(TargetName)$(TargetExt)</OutputFile>
       <TargetMachine>MachineX64</TargetMachine>
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutputPath)\include
-copy iconv.h $(OutputPath)\include
-mkdir $(OutputPath)\licenses
-copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
+      <Command>mkdir $(OutDir)\include\msvc
+copy iconv.h $(OutDir)\include\msvc
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist ..\config.h (
@@ -258,17 +258,17 @@ del ..\libcharset\include\localcharset.h
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
-      <ProgramDatabaseFile>$(OutDir)\bin\$(TargetName).pdb</ProgramDatabaseFile>
+      <OutputFile>$(OutDir)\bin\msvc32\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\bin\msvc32\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
-      <ImportLibrary>$(OutDir)\lib\$(TargetName).lib</ImportLibrary>
-      <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ImportLibrary>$(OutDir)\lib\msvc32\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(OutDir)\bin\msvc32\$(TargetName).pgd</ProfileGuidedDatabase>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutputPath)\include
-copy iconv.h $(OutputPath)\include
-mkdir $(OutputPath)\licenses
-copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
+      <Command>mkdir $(OutDir)\include\msvc
+copy iconv.h $(OutDir)\include\msvc
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist ..\config.h (
@@ -306,17 +306,17 @@ del ..\libcharset\include\localcharset.h
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
-      <ProgramDatabaseFile>$(OutDir)\bin\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <OutputFile>$(OutDir)\bin\msvc64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\bin\msvc64\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
-      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
-      <ProfileGuidedDatabase>$(OutDir)\bin\x64\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ImportLibrary>$(OutDir)\lib\msvc64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(OutDir)\bin\msvc64\$(TargetName).pgd</ProfileGuidedDatabase>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutputPath)\include
-copy iconv.h $(OutputPath)\include
-mkdir $(OutputPath)\licenses
-copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
+      <Command>mkdir $(OutDir)\include\msvc
+copy iconv.h $(OutDir)\include\msvc
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist ..\config.h (
@@ -368,15 +368,15 @@ del ..\libcharset\include\localcharset.h
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\msvc32\$(TargetName)$(TargetExt)</OutputFile>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutputPath)\include
-copy iconv.h $(OutputPath)\include
-mkdir $(OutputPath)\licenses
-copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
+      <Command>mkdir $(OutDir)\include\msvc
+copy iconv.h $(OutDir)\include\msvc
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist ..\config.h (
@@ -428,15 +428,15 @@ del ..\libcharset\include\localcharset.h
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)\lib\msvc64\$(TargetName)$(TargetExt)</OutputFile>
       <TargetMachine>MachineX64</TargetMachine>
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutputPath)\include
-copy iconv.h $(OutputPath)\include
-mkdir $(OutputPath)\licenses
-copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
+      <Command>mkdir $(OutDir)\include\msvc
+copy iconv.h $(OutDir)\include\msvc
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist ..\config.h (
@@ -486,18 +486,18 @@ del ..\libcharset\include\localcharset.h
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
-      <ProgramDatabaseFile>$(OutDir)\bin\$(TargetName).pdb</ProgramDatabaseFile>
+      <OutputFile>$(OutDir)\bin\msvc32\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\bin\msvc32\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
-      <ImportLibrary>$(OutDir)\lib\$(TargetName).lib</ImportLibrary>
-      <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ImportLibrary>$(OutDir)\lib\msvc32\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(OutDir)\bin\msvc32\$(TargetName).pgd</ProfileGuidedDatabase>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutputPath)\include
-copy iconv.h $(OutputPath)\include
-mkdir $(OutputPath)\licenses
-copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
+      <Command>mkdir $(OutDir)\include\msvc
+copy iconv.h $(OutDir)\include\msvc
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist ..\config.h (
@@ -547,17 +547,17 @@ del ..\libcharset\include\localcharset.h
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
-      <ProgramDatabaseFile>$(OutDir)\bin\x64\$(TargetName).pdb</ProgramDatabaseFile>
+      <OutputFile>$(OutDir)\bin\msvc64\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\bin\msvc64\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
-      <ImportLibrary>$(OutDir)\lib\x64\$(TargetName).lib</ImportLibrary>
-      <ProfileGuidedDatabase>$(OutDir)\bin\x64\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ImportLibrary>$(OutDir)\lib\msvc64\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(OutDir)\bin\msvc64\$(TargetName).pgd</ProfileGuidedDatabase>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutputPath)\include
-copy iconv.h $(OutputPath)\include
-mkdir $(OutputPath)\licenses
-copy ..\COPYING $(OutputPath)\licenses\iconv.txt</Command>
+      <Command>mkdir $(OutDir)\include\msvc
+copy iconv.h $(OutDir)\include\msvc
+mkdir $(OutDir)\licenses
+copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>if exist ..\config.h (
