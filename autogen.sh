@@ -49,7 +49,7 @@ if test $skip_gnulib = false; then
     if test -d gnulib; then
       (cd gnulib && git pull)
     else
-      git clone git://git.savannah.gnu.org/gnulib.git
+      git clone http://git.savannah.gnu.org/r/gnulib.git
     fi
     # Now it should contain a gnulib-tool.
     if test -f gnulib/gnulib-tool; then
