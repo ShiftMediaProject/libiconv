@@ -195,7 +195,7 @@ lib/flags.h : lib/encodings.def lib/encodings_aix.def lib/encodings_osf1.def lib
 
 
 lib/translit.h : lib/translit.def lib/gentranslit.c
-	$(CC) $(CFLAGS) lib/gentranslit.c -o gentranslit
+	$(CC) $(CFLAGS) -Wl,--stack=0x20000000 lib/gentranslit.c -o gentranslit
 	ulimit -s unlimited; ./gentranslit < lib/translit.def > lib/translit.h
 	$(RM) gentranslit
 
