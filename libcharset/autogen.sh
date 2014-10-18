@@ -2,7 +2,7 @@
 # Convenience script for regenerating all aclocal.m4, config.h.in, Makefile.in,
 # configure files with new versions of autoconf or automake.
 #
-# This script requires autoconf-2.63..2.68 and automake-1.11 in the PATH.
+# This script requires autoconf and automake in the PATH.
 
 # Copyright (C) 2003-2007, 2009-2010 Free Software Foundation, Inc.
 #
