@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 1999-2001, 2008 Free Software Foundation, Inc.
+ * Copyright (C) 1999-2001, 2008, 2011 Free Software Foundation, Inc.
  * This file is part of the GNU LIBICONV Library.
  *
  * The GNU LIBICONV Library is free software; you can redistribute it
@@ -14,8 +14,7 @@
  *
  * You should have received a copy of the GNU Library General Public
  * License along with the GNU LIBICONV Library; see the file COPYING.LIB.
- * If not, write to the Free Software Foundation, Inc., 51 Franklin Street,
- * Fifth Floor, Boston, MA 02110-1301, USA.
+ * If not, see <http://www.gnu.org/licenses/>.
  */
 
 /*
@@ -32,7 +31,6 @@ ucs2_mbtowc (conv_t conv, ucs4_t *pwc, const unsigned char *s, int n)
   int count = 0;
   for (; n >= 2;) {
     ucs4_t wc = (state ? s[0] + (s[1] << 8) : (s[0] << 8) + s[1]);
-    s += 2; n -= 2; count += 2;
     if (wc == 0xfeff) {
     } else if (wc == 0xfffe) {
       state ^= 1;
@@ -42,8 +40,9 @@ ucs2_mbtowc (conv_t conv, ucs4_t *pwc, const unsigned char *s, int n)
     } else {
       *pwc = wc;
       conv->istate = state;
-      return count;
+      return count+2;
     }
+    s += 2; n -= 2; count += 2;
   }
   conv->istate = state;
   return RET_TOOFEW(count);
