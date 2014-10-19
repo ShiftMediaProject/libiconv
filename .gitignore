@@ -14,6 +14,15 @@ include/iconv.h*
 libcharset/include/libcharset.h*
 libcharset/include/localcharset.h*
 POTFILES
+gnulib/
+autom4te.cache/
+*.gperf
+aclocal.m4
+srcm4/
+config.libpath
+config.rpath
+install-reloc
+reloc-ldflags
 
 *.suo
 *.user
