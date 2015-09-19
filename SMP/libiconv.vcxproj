@@ -953,16 +953,7 @@ del ..\libcharset\include\localcharset.h
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\windows\libiconv.rc">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'">PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'">PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PACKAGE_VERSION_MAJOR=1;PACKAGE_VERSION_MINOR=14;PACKAGE_VERSION_SUBMINOR=1;PACKAGE_VERSION_STRING="1.14";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
