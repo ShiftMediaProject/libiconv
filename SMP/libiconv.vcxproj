@@ -248,6 +248,9 @@ del ..\libcharset\include\libcharset.h
 )
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
+)
+if exist $(OutDir)\include\iconv.h (
+del $(OutDir)\include\iconv.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -294,6 +297,9 @@ del ..\libcharset\include\libcharset.h
 )
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
+)
+if exist $(OutDir)\include\iconv.h (
+del $(OutDir)\include\iconv.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -341,6 +347,9 @@ del ..\libcharset\include\libcharset.h
 )
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
+)
+if exist $(OutDir)\include\iconv.h (
+del $(OutDir)\include\iconv.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -387,6 +396,9 @@ del ..\libcharset\include\libcharset.h
 )
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
+)
+if exist $(OutDir)\include\iconv.h (
+del $(OutDir)\include\iconv.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -446,6 +458,9 @@ del ..\libcharset\include\libcharset.h
 )
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
+)
+if exist $(OutDir)\include\iconv.h (
+del $(OutDir)\include\iconv.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -505,6 +520,9 @@ del ..\libcharset\include\libcharset.h
 )
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
+)
+if exist $(OutDir)\include\iconv.h (
+del $(OutDir)\include\iconv.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -564,6 +582,9 @@ del ..\libcharset\include\libcharset.h
 )
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
+)
+if exist $(OutDir)\include\iconv.h (
+del $(OutDir)\include\iconv.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -623,6 +644,9 @@ del ..\libcharset\include\libcharset.h
 )
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
+)
+if exist $(OutDir)\include\iconv.h (
+del $(OutDir)\include\iconv.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -681,6 +705,9 @@ del ..\libcharset\include\libcharset.h
 )
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
+)
+if exist $(OutDir)\include\iconv.h (
+del $(OutDir)\include\iconv.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -738,6 +765,9 @@ del ..\libcharset\include\libcharset.h
 )
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
+)
+if exist $(OutDir)\include\iconv.h (
+del $(OutDir)\include\iconv.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
