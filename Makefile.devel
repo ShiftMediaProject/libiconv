@@ -92,7 +92,7 @@ srclib/Makefile.gnulib : force
 
 srclib/Makefile.in : srclib/Makefile.am srclib/Makefile.gnulib
 	touch build-aux/compile \
-	&& $(AUTOMAKE) --gnits srclib/Makefile \
+	&& $(AUTOMAKE) --add-missing --gnits srclib/Makefile \
 	&& rm -f build-aux/compile
 
 
