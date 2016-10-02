@@ -9,7 +9,7 @@ AUTOHEADER = autoheader
 AUTOMAKE = automake
 ACLOCAL = aclocal
 GPERF = gperf
-CC = gcc
+CC = gcc -Wall
 CFLAGS = -O
 MAN2HTML = groff -mandoc -Thtml
 CP = cp
@@ -70,7 +70,6 @@ GNULIB_MODULES = \
   gettext \
   gettext-h \
   mbstate \
-  memmove \
   progname \
   relocatable-prog \
   safe-read \
@@ -92,8 +91,7 @@ srclib/Makefile.gnulib : force
 
 srclib/Makefile.in : srclib/Makefile.am srclib/Makefile.gnulib
 	touch build-aux/compile \
-	&& $(AUTOMAKE) --add-missing --gnits srclib/Makefile \
-	&& rm -f build-aux/compile
+	&& $(AUTOMAKE) --gnits --add-missing srclib/Makefile
 
 
 include/iconv.h.build.in : include/iconv.h.in include/export.h
@@ -195,8 +193,8 @@ lib/flags.h : lib/encodings.def lib/encodings_aix.def lib/encodings_osf1.def lib
 
 
 lib/translit.h : lib/translit.def lib/gentranslit.c
-	$(CC) $(CFLAGS) -Wl,--stack=0x20000000 lib/gentranslit.c -o gentranslit
-	ulimit -s unlimited; ./gentranslit < lib/translit.def > lib/translit.h
+	$(CC) $(CFLAGS) lib/gentranslit.c -o gentranslit
+	./gentranslit < lib/translit.def > lib/translit.h
 	$(RM) gentranslit
 
 
