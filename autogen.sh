@@ -60,20 +60,25 @@ if test $skip_gnulib = false; then
   fi
   # Skip the gnulib-tool step if gnulib-tool was not found.
   if test -n "$GNULIB_TOOL"; then
-    make -f Makefile.devel srclib/Makefile.gnulib GNULIB_TOOL="$GNULIB_TOOL"
+    make -f Makefile.devel \
+         gnulib-clean srclib/Makefile.gnulib gnulib-imported-files \
+         GNULIB_TOOL="$GNULIB_TOOL"
   fi
 fi
 
-rm -f configure config.h.in include/iconv.h.build.in
-rm -f lib/aliases.h lib/aliases_sysaix.h lib/aliases_syshpux.h lib/aliases_sysosf1.h lib/aliases_syssolaris.h
-rm -f lib/aliases_aix.h lib/aliases_aix_sysaix.h
-rm -f lib/aliases_osf1.h lib/aliases_osf1_sysosf1.h
-rm -f lib/aliases_dos.h
-rm -f lib/aliases_extra.h
-rm -f lib/flags.h
-rm -f lib/translit.h
-rm -f man/iconv.1.html man/iconv.3.html man/iconv_close.3.html man/iconv_open.3.html
-make -f Makefile.devel
+make -f Makefile.devel totally-clean all
+
+# Copy files into the libcharset subpackage, so that libcharset/autogen.sh
+# does not need to invoke gnulib-tool nor automake.
+for file in INSTALL.generic; do
+  cp -p $file libcharset/$file || exit $?
+done
+for file in config.guess config.libpath config.sub install-sh mkinstalldirs; do
+  cp -p build-aux/$file libcharset/build-aux/$file || exit $?
+done
+for file in codeset.m4 fcntl-o.m4 glibc21.m4 relocatable-lib.m4 visibility.m4; do
+  cp -p srcm4/$file libcharset/m4/$file || exit $?
+done
 
 (cd libcharset
  ./autogen.sh

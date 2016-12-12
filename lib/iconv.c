@@ -176,7 +176,14 @@ static const struct alias sysdep_aliases[] = {
 #include "aliases2.h"
 #undef S
 };
-const struct alias *
+#ifdef __GNUC__
+__inline
+#else
+#ifdef __cplusplus
+inline
+#endif
+#endif
+static const struct alias *
 aliases2_lookup (register const char *str)
 {
   const struct alias * ptr;

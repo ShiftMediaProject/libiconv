@@ -32,15 +32,17 @@ all : configures config.h.in \
 
 # Before making a new release:
 # - check that the encoding lists in README and man/iconv_open.3 are up to date,
+# - check that the files in libcharset/lib/ are in sync with the gnulib modules
+#   'localcharset' and 'relocatable-lib-lgpl',
 # - increment the version number in
+#     configure.ac
 #     include/iconv.h.in
 #     README
-#     djgpp/README
-#     djgpp/fnchange.lst
-#     libcharset/djgpp/README
-#     libcharset/djgpp/fnchange.lst
 # - update the version info in lib/Makefile.in,
-# - do "make -f Makefile.devel".
+# - $ ./autogen.sh
+# Making a new release:
+# - $ ./configure CPPFLAGS=-Wall; make; make check
+# - $ make dist
 
 
 CONFIGURES = configure
@@ -83,15 +85,28 @@ GNULIB_MODULES = \
   xalloc \
   libiconv-misc
 
-srclib/Makefile.gnulib : force
+srclib/Makefile.gnulib :
 	if test -n "$$GNULIB_TOOL"; then \
 	  $$GNULIB_TOOL --lib=libicrt --source-base=srclib --m4-base=srcm4 --makefile-name=Makefile.gnulib --no-libtool --local-dir=gnulib-local --no-vc-files \
 	    --import $(GNULIB_MODULES); \
 	fi
 
 srclib/Makefile.in : srclib/Makefile.am srclib/Makefile.gnulib
-	touch build-aux/compile \
-	&& $(AUTOMAKE) --gnits --add-missing srclib/Makefile
+	if test -n "$$GNULIB_TOOL"; then \
+	  $$GNULIB_TOOL --copy-file build-aux/ar-lib; \
+	  $$GNULIB_TOOL --copy-file build-aux/compile; \
+	fi
+# Make sure we get new versions of files brought in by automake.
+	(cd build-aux && rm -f ar-lib compile depcomp install-sh mdate-sh missing test-driver)
+	$(AUTOMAKE) --gnits --add-missing --copy srclib/Makefile
+
+gnulib-imported-files : force
+	if test -n "$$GNULIB_TOOL"; then \
+	  for file in config.guess config.sub; do \
+	    $$GNULIB_TOOL --copy-file build-aux/$$file || exit $$?; \
+	    chmod a+x build-aux/$$file || exit $$?; \
+	  done; \
+	fi
 
 
 include/iconv.h.build.in : include/iconv.h.in include/export.h
@@ -199,7 +214,40 @@ lib/translit.h : lib/translit.def lib/gentranslit.c
 
 
 man/%.html : man/%
-	$(MAN2HTML) $< > $@
+	$(MAN2HTML) $< > $@-t
+	grep -v '<!-- CreationDate' < $@-t > $@
+	$(RM) $@-t
+
+
+gnulib-clean : force
+# Move srclib/Makefile.gnulib away, so that the target 'srclib/Makefile.gnulib' will actually do something.
+	if test -f srclib/Makefile.gnulib; then \
+	  mv srclib/Makefile.gnulib srclib/Makefile.gnulib~; \
+	fi
+# No need to remove the stale files. gnulib-tool does this itself, thank to srclib/gnulib-comp.m4.
+#	find srclib '(' -name '*.h' -o -name '*.c' -o -name '*.valgrind' ')' -exec rm -f '{}' ';'
+#	rm -rf srcm4
+
+totally-clean : force
+	rm -f srclib/Makefile.in
+	rm -f $(CONFIGURES) config.h.in include/iconv.h.build.in
+	rm -f lib/aliases.gperf lib/aliases_sysaix.gperf lib/aliases_syshpux.gperf lib/aliases_sysosf1.gperf lib/aliases_syssolaris.gperf
+	rm -f lib/aliases.h lib/aliases_sysaix.h lib/aliases_syshpux.h lib/aliases_sysosf1.h lib/aliases_syssolaris.h
+	rm -f lib/aliases_aix.h lib/aliases_aix_sysaix.h
+	rm -f lib/aliases_osf1.h lib/aliases_osf1_sysosf1.h
+	rm -f lib/aliases_dos.h
+	rm -f lib/aliases_extra.h
+	rm -f lib/canonical.h lib/canonical_sysaix.h lib/canonical_syshpux.h lib/canonical_sysosf1.h lib/canonical_syssolaris.h
+	rm -f lib/canonical_aix.h lib/canonical_aix_sysaix.h
+	rm -f lib/canonical_osf1.h lib/canonical_osf1_sysosf1.h
+	rm -f lib/canonical_dos.h
+	rm -f lib/canonical_extra.h
+	rm -f lib/canonical_local.h lib/canonical_local_sysaix.h lib/canonical_local_syshpux.h lib/canonical_local_sysosf1.h lib/canonical_local_syssolaris.h
+	rm -f lib/flags.h
+	rm -f lib/translit.h
+	rm -f man/iconv.1.html man/iconv.3.html man/iconv_close.3.html man/iconv_open.3.html man/iconvctl.3.html man/iconv_open_into.3.html
+	cd libcharset && $(MAKE) -f Makefile.devel totally-clean
+	cd preload && $(MAKE) -f Makefile.devel totally-clean
 
 
 force :

@@ -1,3 +1,150 @@
+2016-12-04  Bruno Haible  <bruno@clisp.org>
+
+	Update comments.
+	* Makefile.devel: Update comments about release process.
+
+2016-12-04  Bruno Haible  <bruno@clisp.org>
+
+	Create tarballs through an Automake-like "make dist" command.
+	* Makefile.in (SOURCE_FILES, LIBTOOL_IMPORTED_FILES,
+	AUTOMAKE_OLD_IMPORTED_FILES, AUTOMAKE_IMPORTED_FILES, IMPORTED_FILES,
+	GENERATED_FILES, DISTRIBUTED_BUILT_FILES, DISTFILES): New macros.
+	(distdir): New target.
+	(PACKAGE, VERSION, TAR, GZIP): New macros.
+	(dist): New target.
+	* lib/Makefile.in (SOURCE_FILES, IMPORTED_FILES, GENERATED_FILES,
+	DISTRIBUTED_BUILT_FILES, DISTFILES): New macros.
+	(distdir): New target.
+	* man/Makefile.in (SOURCE_FILES, IMPORTED_FILES, GENERATED_FILES,
+	DISTRIBUTED_BUILT_FILES, DISTFILES): New macros.
+	(distdir): New target.
+	* preload/Makefile.in (SOURCE_FILES, IMPORTED_FILES, GENERATED_FILES,
+	DISTRIBUTED_BUILT_FILES, DISTFILES): New macros.
+	(distdir): New target.
+	* src/Makefile.in (SOURCE_FILES, IMPORTED_FILES, GENERATED_FILES,
+	DISTRIBUTED_BUILT_FILES, DISTFILES): New macros.
+	(distdir): New target.
+	* tests/Makefile.in (SOURCE_FILES, IMPORTED_FILES, GENERATED_FILES,
+	DISTRIBUTED_BUILT_FILES, DISTFILES): New macros.
+	(distdir): New target.
+
+2016-12-04  Bruno Haible  <bruno@clisp.org>
+
+	Remove duplicates of imported files from version control.
+	* autogen.sh: Copy imported files to libcharset.
+
+2016-12-04  Bruno Haible  <bruno@clisp.org>
+
+	Always use the newest released copies of files brought in from Automake.
+	* Makefile.devel (srclib/Makefile.in): Make sure to get new versions of
+	files brought in by automake.
+	* build-aux/install-sh: Remove from version control.
+	* build-aux/missing: Likewise.
+
+2016-12-04  Bruno Haible  <bruno@clisp.org>
+
+	Always use the newest copies of config.guess, config.sub.
+	* Makefile.devel (gnulib-imported-files): New target.
+	* autogen.sh: Invoke it.
+	* build-aux/config.guess: Remove from version control.
+	* build-aux/config.sub: Likewise.
+
+2016-12-04  Bruno Haible  <bruno@clisp.org>
+
+	Always use the newest copy of fcntl-o.m4.
+	* m4/fcntl-o.m4: Remove file. Rely on srcm4/fcntl-o.m4 instead.
+
+2016-12-04  Bruno Haible  <bruno@clisp.org>
+
+	Remove obsolete documentation.
+	* PORTS: Remove file.
+
+2016-12-03  Bruno Haible  <bruno@clisp.org>
+
+	Make Makefile.devel more useful for the users of the released tarball.
+	* Makefile.devel (srclib/Makefile.gnulib): Don't force this target.
+	(gnulib-clean): New target.
+	(totally-clean): New target. Do the removals from autogen.sh. Also,
+	remove lib/aliases*.gperf, lib/canonical*.h, man/iconvctl.3.html,
+	man/iconv_open_into.3.html.
+	* autogen.sh: Invoke target gnulib-clean before srclib/Makefile.gnulib.
+	Invoke target totally-clean before all.
+	* preload/Makefile.devel (totally-clean): New target.
+
+2016-12-03  Bruno Haible  <bruno@clisp.org>
+
+	Modernize configure.ac.
+	* configure.ac: Use 2-argument AC_INIT. Avoid an AM_INIT_AUTOMAKE
+	warning.
+	* preload/configure.ac: Use 2-argument AC_INIT. Use AC_CONFIG_SRCDIR.
+
+2016-12-03  Bruno Haible  <bruno@clisp.org>
+
+	Towards reproducible builds.
+	* Makefile.devel (man/%.html): Remove the CreationDate comment line
+	from the output.
+
+2016-12-04  Bruno Haible  <bruno@clisp.org>
+
+	Update to gettext-0.19.8.1.
+	* ABOUT-NLS: Update through 'gettextize'.
+
+2016-12-03  Bruno Haible  <bruno@clisp.org>
+
+	Update documentation.
+	* HACKING: Refer to the Git repository.
+
+2016-12-03  Bruno Haible  <bruno@clisp.org>
+
+	Avoid compilation warnings in 'genflags' program.
+	* lib/genflags.c: Avoid warnings from GCC's -Wunused-function option.
+
+2016-12-02  Bruno Haible  <bruno@clisp.org>
+
+	* relocatable.c: Update from gnulib.
+
+2016-11-25  Bruno Haible  <bruno@clisp.org>
+
+	Prepare for version 1.15.
+	* configure.ac: Bump version number to 1.15.
+	* README: Likewise.
+	* include/iconv.h.in (_LIBICONV_VERSION): Likewise.
+	* windows/iconv.rc: Update.
+	* windows/libiconv.rc: Update.
+	* Makefile.devel: Update comments.
+	* lib/Makefile.in (LIBICONV_VERSION_INFO): Bump to 8:0:6.
+	* src/iconv.c (print_version): Update copyright year.
+
+2016-11-23  Bruno Haible  <bruno@clisp.org>
+
+	Update installation instructions for Windows.
+	* README.windows: Assume a 64-bit Windows. Explain both 32-bit and
+	64-bit builds. Add instructions for the MS Visual C/C++ tool chain.
+	Revamp instructions for Cygwin.
+
+2016-11-23  Bruno Haible  <bruno@clisp.org>
+
+	Drop the nickname "woe32".
+	* README.windows: Renamed from README.woe32.
+
+2016-11-22  Bruno Haible  <bruno@clisp.org>
+
+	Update support for building with MSVC.
+	* Makefile.devel (srclib/Makefile.in): Import 'ar-lib' and 'compile'
+	from gnulib.
+	* lib/Makefile.in (install-lib, install): Install the .la file with
+	$(INSTALL), not $(INSTALL_DATA). Otherwise the native Windows DLL gets
+	installed without execution permissions, and programs linked to it fail:
+	in a Cygwin shell with exit code 127, or from a cmd.exe window with a
+	dialog "The application was unable to start correctly (0xc0000022)."
+
+2016-11-19  Bruno Haible  <bruno@clisp.org>
+
+	Fix link error when compiling with gcc -O0.
+	* lib/iconv.c (aliases2_lookup): Make static.
+	Reported by Chung-Lin Tang <chunglin.tang@gmail.com>
+	at https://savannah.gnu.org/bugs/?47953 .
+
 2016-11-17  Bruno Haible  <bruno@clisp.org>
 
 	UTF-8: Reject surrogates and out-of-range code points.
