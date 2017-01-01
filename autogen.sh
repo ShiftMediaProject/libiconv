@@ -29,7 +29,7 @@
 
 # Usage: ./autogen.sh [--skip-gnulib]
 #
-# Usage from a CVS checkout:                 ./autogen.sh
+# Usage from a git checkout:                 ./autogen.sh
 # This uses an up-to-date gnulib checkout.
 #
 # Usage from a released tarball:             ./autogen.sh --skip-gnulib
@@ -66,7 +66,7 @@ if test $skip_gnulib = false; then
   fi
 fi
 
-make -f Makefile.devel totally-clean all
+make -f Makefile.devel totally-clean all || exit $?
 
 # Copy files into the libcharset subpackage, so that libcharset/autogen.sh
 # does not need to invoke gnulib-tool nor automake.
@@ -81,5 +81,7 @@ for file in codeset.m4 fcntl-o.m4 glibc21.m4 relocatable-lib.m4 visibility.m4; d
 done
 
 (cd libcharset
- ./autogen.sh
+ ./autogen.sh || exit $?
 )
+
+echo "$0: done.  Now you can run './configure'."
