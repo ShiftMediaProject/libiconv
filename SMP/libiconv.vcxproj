@@ -230,7 +230,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\lib;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBICONV;LIBDIR;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4996;4028;4090;4244;4267;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -291,7 +291,7 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\lib;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBICONV;LIBDIR;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4996;4028;4090;4244;4267;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -352,7 +352,7 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\lib;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBICONV;LIBDIR;_WIN32_WINNT=0x0502;LIBICONV_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4996;4028;4090;4244;4267;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -414,7 +414,7 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\lib;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBICONV;LIBDIR;_WIN32_WINNT=0x0600;LIBICONV_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4996;4028;4090;4244;4267;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -485,7 +485,7 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\lib;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBICONV;LIBDIR;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4996;4028;4090;4244;4267;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -559,7 +559,7 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\lib;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBICONV;LIBDIR;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4996;4028;4090;4244;4267;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -633,7 +633,7 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\lib;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBICONV;LIBDIR;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4996;4028;4090;4244;4267;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -707,7 +707,7 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\lib;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBICONV;LIBDIR;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4996;4028;4090;4244;4267;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -781,7 +781,7 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\lib;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBICONV;LIBDIR;_WIN32_WINNT=0x0502;LIBICONV_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4996;4028;4090;4244;4267;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -855,7 +855,7 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointModel>Fast</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\lib;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>BUILDING_LIBICONV;LIBDIR;_WIN32_WINNT=0x0600;LIBICONV_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4018;4996;4028;4090;4244;4267;4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -920,10 +920,6 @@ del /f /q $(OutDir)\licenses\iconv.txt
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\lib\aliases2.h" />
-    <ClInclude Include="..\lib\aliases_aix.h" />
-    <ClInclude Include="..\lib\aliases_dos.h" />
-    <ClInclude Include="..\lib\aliases_extra.h" />
-    <ClInclude Include="..\lib\aliases_osf1.h" />
     <ClInclude Include="..\lib\armscii_8.h" />
     <ClInclude Include="..\lib\ascii.h" />
     <ClInclude Include="..\lib\atarist.h" />
@@ -1091,7 +1087,6 @@ del /f /q $(OutDir)\licenses\iconv.txt
     <ClInclude Include="..\lib\tcvn.h" />
     <ClInclude Include="..\lib\tds565.h" />
     <ClInclude Include="..\lib\tis620.h" />
-    <ClInclude Include="..\lib\translit.h" />
     <ClInclude Include="..\lib\ucs2.h" />
     <ClInclude Include="..\lib\ucs2be.h" />
     <ClInclude Include="..\lib\ucs2internal.h" />
@@ -1116,6 +1111,9 @@ del /f /q $(OutDir)\licenses\iconv.txt
     <ClInclude Include="..\lib\viscii.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="iconv.h" />
+    <ClInclude Include="lib\aliases_dos.h" />
+    <ClInclude Include="lib\canonical_dos.h" />
+    <ClInclude Include="lib\translit.h" />
     <ClInclude Include="localcharset.h" />
   </ItemGroup>
   <ItemGroup>
