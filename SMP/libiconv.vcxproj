@@ -243,8 +243,8 @@
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-copy iconv.h $(OutDir)\include
+      <Command>mkdir "$(OutDir)"\include
+copy iconv.h "$(OutDir)"\include
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
@@ -267,8 +267,8 @@ del ..\libcharset\include\libcharset.h
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
 )
-if exist $(OutDir)\include\iconv.h (
-del $(OutDir)\include\iconv.h
+if exist "$(OutDir)"\include\iconv.h (
+del "$(OutDir)"\include\iconv.h
 )</Command>
     </PreBuildEvent>
     <CustomBuildStep>
@@ -276,8 +276,8 @@ del $(OutDir)\include\iconv.h
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\iconv.h (
-del /f /q $(OutDir)\include\iconv.h
+      <Command>if exist "$(OutDir)"\include\iconv.h (
+del /f /q "$(OutDir)"\include\iconv.h
 )
 if exist $(OutDir)\licenses\iconv.txt (
 del /f /q $(OutDir)\licenses\iconv.txt
@@ -304,8 +304,8 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-copy iconv.h $(OutDir)\include
+      <Command>mkdir "$(OutDir)"\include
+copy iconv.h "$(OutDir)"\include
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
@@ -328,8 +328,8 @@ del ..\libcharset\include\libcharset.h
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
 )
-if exist $(OutDir)\include\iconv.h (
-del $(OutDir)\include\iconv.h
+if exist "$(OutDir)"\include\iconv.h (
+del "$(OutDir)"\include\iconv.h
 )</Command>
     </PreBuildEvent>
     <CustomBuildStep>
@@ -337,8 +337,8 @@ del $(OutDir)\include\iconv.h
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\iconv.h (
-del /f /q $(OutDir)\include\iconv.h
+      <Command>if exist "$(OutDir)"\include\iconv.h (
+del /f /q "$(OutDir)"\include\iconv.h
 )
 if exist $(OutDir)\licenses\iconv.txt (
 del /f /q $(OutDir)\licenses\iconv.txt
@@ -367,8 +367,8 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-copy iconv.h $(OutDir)\include
+      <Command>mkdir "$(OutDir)"\include
+copy iconv.h "$(OutDir)"\include
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
@@ -391,8 +391,8 @@ del ..\libcharset\include\libcharset.h
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
 )
-if exist $(OutDir)\include\iconv.h (
-del $(OutDir)\include\iconv.h
+if exist "$(OutDir)"\include\iconv.h (
+del "$(OutDir)"\include\iconv.h
 )</Command>
     </PreBuildEvent>
     <CustomBuildStep>
@@ -400,8 +400,8 @@ del $(OutDir)\include\iconv.h
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\iconv.h (
-del /f /q $(OutDir)\include\iconv.h
+      <Command>if exist "$(OutDir)"\include\iconv.h (
+del /f /q "$(OutDir)"\include\iconv.h
 )
 if exist $(OutDir)\licenses\iconv.txt (
 del /f /q $(OutDir)\licenses\iconv.txt
@@ -429,8 +429,8 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-copy iconv.h $(OutDir)\include
+      <Command>mkdir "$(OutDir)"\include
+copy iconv.h "$(OutDir)"\include
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
@@ -453,8 +453,8 @@ del ..\libcharset\include\libcharset.h
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
 )
-if exist $(OutDir)\include\iconv.h (
-del $(OutDir)\include\iconv.h
+if exist "$(OutDir)"\include\iconv.h (
+del "$(OutDir)"\include\iconv.h
 )</Command>
     </PreBuildEvent>
     <CustomBuildStep>
@@ -462,8 +462,8 @@ del $(OutDir)\include\iconv.h
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\iconv.h (
-del /f /q $(OutDir)\include\iconv.h
+      <Command>if exist "$(OutDir)"\include\iconv.h (
+del /f /q "$(OutDir)"\include\iconv.h
 )
 if exist $(OutDir)\licenses\iconv.txt (
 del /f /q $(OutDir)\licenses\iconv.txt
@@ -499,8 +499,8 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-copy iconv.h $(OutDir)\include
+      <Command>mkdir "$(OutDir)"\include
+copy iconv.h "$(OutDir)"\include
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
@@ -523,8 +523,8 @@ del ..\libcharset\include\libcharset.h
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
 )
-if exist $(OutDir)\include\iconv.h (
-del $(OutDir)\include\iconv.h
+if exist "$(OutDir)"\include\iconv.h (
+del "$(OutDir)"\include\iconv.h
 )</Command>
     </PreBuildEvent>
     <CustomBuildStep>
@@ -532,8 +532,8 @@ del $(OutDir)\include\iconv.h
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\iconv.h (
-del /f /q $(OutDir)\include\iconv.h
+      <Command>if exist "$(OutDir)"\include\iconv.h (
+del /f /q "$(OutDir)"\include\iconv.h
 )
 if exist $(OutDir)\licenses\iconv.txt (
 del /f /q $(OutDir)\licenses\iconv.txt
@@ -569,8 +569,8 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-copy iconv.h $(OutDir)\include
+      <Command>mkdir "$(OutDir)"\include
+copy iconv.h "$(OutDir)"\include
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
@@ -593,8 +593,8 @@ del ..\libcharset\include\libcharset.h
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
 )
-if exist $(OutDir)\include\iconv.h (
-del $(OutDir)\include\iconv.h
+if exist "$(OutDir)"\include\iconv.h (
+del "$(OutDir)"\include\iconv.h
 )</Command>
     </PreBuildEvent>
     <CustomBuildStep>
@@ -602,8 +602,8 @@ del $(OutDir)\include\iconv.h
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\iconv.h (
-del /f /q $(OutDir)\include\iconv.h
+      <Command>if exist "$(OutDir)"\include\iconv.h (
+del /f /q "$(OutDir)"\include\iconv.h
 )
 if exist $(OutDir)\licenses\iconv.txt (
 del /f /q $(OutDir)\licenses\iconv.txt
@@ -639,8 +639,8 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-copy iconv.h $(OutDir)\include
+      <Command>mkdir "$(OutDir)"\include
+copy iconv.h "$(OutDir)"\include
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
@@ -663,8 +663,8 @@ del ..\libcharset\include\libcharset.h
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
 )
-if exist $(OutDir)\include\iconv.h (
-del $(OutDir)\include\iconv.h
+if exist "$(OutDir)"\include\iconv.h (
+del "$(OutDir)"\include\iconv.h
 )</Command>
     </PreBuildEvent>
     <CustomBuildStep>
@@ -672,8 +672,8 @@ del $(OutDir)\include\iconv.h
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\iconv.h (
-del /f /q $(OutDir)\include\iconv.h
+      <Command>if exist "$(OutDir)"\include\iconv.h (
+del /f /q "$(OutDir)"\include\iconv.h
 )
 if exist $(OutDir)\licenses\iconv.txt (
 del /f /q $(OutDir)\licenses\iconv.txt
@@ -709,8 +709,8 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-copy iconv.h $(OutDir)\include
+      <Command>mkdir "$(OutDir)"\include
+copy iconv.h "$(OutDir)"\include
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
@@ -733,8 +733,8 @@ del ..\libcharset\include\libcharset.h
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
 )
-if exist $(OutDir)\include\iconv.h (
-del $(OutDir)\include\iconv.h
+if exist "$(OutDir)"\include\iconv.h (
+del "$(OutDir)"\include\iconv.h
 )</Command>
     </PreBuildEvent>
     <CustomBuildStep>
@@ -742,8 +742,8 @@ del $(OutDir)\include\iconv.h
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\iconv.h (
-del /f /q $(OutDir)\include\iconv.h
+      <Command>if exist "$(OutDir)"\include\iconv.h (
+del /f /q "$(OutDir)"\include\iconv.h
 )
 if exist $(OutDir)\licenses\iconv.txt (
 del /f /q $(OutDir)\licenses\iconv.txt
@@ -780,8 +780,8 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-copy iconv.h $(OutDir)\include
+      <Command>mkdir "$(OutDir)"\include
+copy iconv.h "$(OutDir)"\include
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
@@ -804,8 +804,8 @@ del ..\libcharset\include\libcharset.h
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
 )
-if exist $(OutDir)\include\iconv.h (
-del $(OutDir)\include\iconv.h
+if exist "$(OutDir)"\include\iconv.h (
+del "$(OutDir)"\include\iconv.h
 )</Command>
     </PreBuildEvent>
     <CustomBuildStep>
@@ -813,8 +813,8 @@ del $(OutDir)\include\iconv.h
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\iconv.h (
-del /f /q $(OutDir)\include\iconv.h
+      <Command>if exist "$(OutDir)"\include\iconv.h (
+del /f /q "$(OutDir)"\include\iconv.h
 )
 if exist $(OutDir)\licenses\iconv.txt (
 del /f /q $(OutDir)\licenses\iconv.txt
@@ -850,8 +850,8 @@ del /f /q $(OutDir)\licenses\iconv.txt
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-copy iconv.h $(OutDir)\include
+      <Command>mkdir "$(OutDir)"\include
+copy iconv.h "$(OutDir)"\include
 mkdir $(OutDir)\licenses
 copy ..\COPYING $(OutDir)\licenses\iconv.txt</Command>
     </PostBuildEvent>
@@ -874,8 +874,8 @@ del ..\libcharset\include\libcharset.h
 if exist ..\libcharset\include\localcharset.h (
 del ..\libcharset\include\localcharset.h
 )
-if exist $(OutDir)\include\iconv.h (
-del $(OutDir)\include\iconv.h
+if exist "$(OutDir)"\include\iconv.h (
+del "$(OutDir)"\include\iconv.h
 )</Command>
     </PreBuildEvent>
     <CustomBuildStep>
@@ -883,8 +883,8 @@ del $(OutDir)\include\iconv.h
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\iconv.h (
-del /f /q $(OutDir)\include\iconv.h
+      <Command>if exist "$(OutDir)"\include\iconv.h (
+del /f /q "$(OutDir)"\include\iconv.h
 )
 if exist $(OutDir)\licenses\iconv.txt (
 del /f /q $(OutDir)\licenses\iconv.txt
