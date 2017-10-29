@@ -12,10 +12,8 @@
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
    Library General Public License for more details.
 
-   You should have received a copy of the GNU Library General Public
-   License along with this program; if not, write to the Free Software
-   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
-   USA.  */
+   You should have received a copy of the GNU Library General Public License
+   along with this program; if not, see <http://www.gnu.org/licenses/>.  */
 
 #ifndef _LOCALCHARSET_H
 #define _LOCALCHARSET_H
@@ -36,12 +34,12 @@ extern "C" {
 #endif
 
 
-    /* Determine the current locale's character encoding, and canonicalize it
-    into one of the canonical names listed in config.charset.
-    The result must not be freed; it is statically allocated.
-    If the canonical name cannot be determined, the result is a non-canonical
-    name.  */
-    extern LIBCHARSET_DLL_EXPORTED const char * locale_charset(void);
+/* Determine the current locale's character encoding, and canonicalize it
+   into one of the canonical names listed in config.charset.
+   The result must not be freed; it is statically allocated.
+   If the canonical name cannot be determined, the result is a non-canonical
+   name.  */
+extern LIBCHARSET_DLL_EXPORTED const char * locale_charset (void);
 
 
 #ifdef __cplusplus

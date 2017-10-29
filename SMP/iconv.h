@@ -13,15 +13,14 @@
 
    You should have received a copy of the GNU Library General Public
    License along with the GNU LIBICONV Library; see the file COPYING.LIB.
-   If not, write to the Free Software Foundation, Inc., 51 Franklin Street,
-   Fifth Floor, Boston, MA 02110-1301, USA.  */
+   If not, see <http://www.gnu.org/licenses/>.  */
 
 /* When installed, this file is called "iconv.h". */
 
 #ifndef _LIBICONV_H
 #define _LIBICONV_H
 
-#define _LIBICONV_VERSION 0x010E    /* version number: (major<<8) + minor */
+#define _LIBICONV_VERSION 0x010F    /* version number: (major<<8) + minor */
 
 #ifdef LIBICONV_DLL
 #ifdef BUILDING_LIBICONV
@@ -32,6 +31,7 @@
 #else 
 #define LIBICONV_DLL_EXPORTED
 #endif
+extern LIBICONV_DLL_EXPORTED int _libiconv_version; /* Likewise */
 
 /* We would like to #include any system header file which could define
    iconv_t, 1. in order to eliminate the risk that the user gets compilation
