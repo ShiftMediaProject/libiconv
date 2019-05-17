@@ -1,4 +1,4 @@
-/* ANSI-C code produced by gperf version 3.0.4 */
+/* ANSI-C code produced by gperf version 3.1 */
 /* Command-line: gperf -m 10 ./SMP/tools/aliases.gperf  */
 /* Computed positions: -k'1,3-11,$' */
 
@@ -26,7 +26,7 @@
       && ('w' == 119) && ('x' == 120) && ('y' == 121) && ('z' == 122) \
       && ('{' == 123) && ('|' == 124) && ('}' == 125) && ('~' == 126))
 /* The character set is not based on ISO-646.  */
-#error "gperf generated tables don't work with this execution character set. Please report a bug to <bug-gnu-gperf@gnu.org>."
+#error "gperf generated tables don't work with this execution character set. Please report a bug to <bug-gperf@gnu.org>."
 #endif
 
 #line 1 "./SMP/tools/aliases.gperf"
@@ -47,7 +47,7 @@ inline
 #endif
 #endif
 static unsigned int
-aliases_hash (register const char *str, register unsigned int len)
+aliases_hash (register const char *str, register size_t len)
 {
   static const unsigned short asso_values[] =
     {
@@ -65,7 +65,7 @@ aliases_hash (register const char *str, register unsigned int len)
       922, 922, 922, 922, 922, 922, 922, 922, 922, 922,
       922, 922, 922, 922, 922, 922, 922, 922
     };
-  register int hval = len;
+  register unsigned int hval = len;
 
   switch (hval)
     {
@@ -815,890 +815,890 @@ static const struct alias aliases[] =
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 134 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str15, ei_iso8859_10},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str15, ei_iso8859_10},
     {-1},
 #line 60 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str17, ei_iso8859_1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str17, ei_iso8859_1},
     {-1}, {-1},
 #line 288 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str20, ei_iso646_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str20, ei_iso646_cn},
     {-1}, {-1}, {-1}, {-1},
 #line 84 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str25, ei_iso8859_4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str25, ei_iso8859_4},
     {-1},
 #line 126 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str27, ei_iso8859_9},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str27, ei_iso8859_9},
     {-1}, {-1},
 #line 227 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str30, ei_hp_roman8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str30, ei_hp_roman8},
     {-1}, {-1},
 #line 151 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str33, ei_iso8859_14},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str33, ei_iso8859_14},
 #line 308 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str34, ei_sjis},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str34, ei_sjis},
     {-1},
 #line 207 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str36, ei_cp866},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str36, ei_cp866},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 68 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str43, ei_iso8859_2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str43, ei_iso8859_2},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 16 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str51, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str51, ei_ascii},
     {-1}, {-1},
 #line 205 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str54, ei_cp866},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str54, ei_cp866},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 51 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str64, ei_c99},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str64, ei_c99},
 #line 252 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str65, ei_tis620},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str65, ei_tis620},
 #line 320 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str66, ei_euc_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str66, ei_euc_cn},
 #line 133 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str67, ei_iso8859_10},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str67, ei_iso8859_10},
     {-1}, {-1},
 #line 236 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str70, ei_pt154},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str70, ei_pt154},
 #line 59 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str71, ei_iso8859_1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str71, ei_iso8859_1},
 #line 319 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str72, ei_euc_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str72, ei_euc_cn},
     {-1},
 #line 91 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str74, ei_iso8859_5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str74, ei_iso8859_5},
     {-1},
 #line 286 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str76, ei_iso646_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str76, ei_iso646_cn},
     {-1},
 #line 332 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str78, ei_hz},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str78, ei_hz},
 #line 264 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str79, ei_iso646_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str79, ei_iso646_jp},
     {-1}, {-1}, {-1}, {-1},
 #line 189 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str84, ei_cp1256},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str84, ei_cp1256},
     {-1}, {-1},
 #line 83 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str87, ei_iso8859_4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str87, ei_iso8859_4},
 #line 174 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str88, ei_cp1251},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str88, ei_cp1251},
 #line 294 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str89, ei_isoir165},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str89, ei_isoir165},
     {-1},
 #line 125 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str91, ei_iso8859_9},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str91, ei_iso8859_9},
 #line 203 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str92, ei_cp862},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str92, ei_cp862},
 #line 107 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str93, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str93, ei_iso8859_7},
     {-1},
 #line 90 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str95, ei_iso8859_5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str95, ei_iso8859_5},
 #line 57 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str96, ei_iso8859_1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str96, ei_iso8859_1},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 150 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str103, ei_iso8859_14},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str103, ei_iso8859_14},
 #line 183 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str104, ei_cp1254},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str104, ei_cp1254},
 #line 291 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str105, ei_gb2312},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str105, ei_gb2312},
 #line 353 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str106, ei_cp949},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str106, ei_cp949},
     {-1},
 #line 186 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str108, ei_cp1255},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str108, ei_cp1255},
     {-1},
 #line 201 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str110, ei_cp862},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str110, ei_cp862},
 #line 124 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str111, ei_iso8859_9},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str111, ei_iso8859_9},
 #line 76 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str112, ei_iso8859_3},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str112, ei_iso8859_3},
 #line 158 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str113, ei_iso8859_15},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str113, ei_iso8859_15},
 #line 293 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str114, ei_gb2312},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str114, ei_gb2312},
 #line 299 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str115, ei_ksc5601},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str115, ei_ksc5601},
     {-1},
 #line 283 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str117, ei_jisx0212},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str117, ei_jisx0212},
     {-1},
 #line 163 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str119, ei_iso8859_16},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str119, ei_iso8859_16},
 #line 195 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str120, ei_cp1258},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str120, ei_cp1258},
 #line 234 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str121, ei_pt154},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str121, ei_pt154},
     {-1},
 #line 67 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str123, ei_iso8859_2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str123, ei_iso8859_2},
 #line 102 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str124, ei_iso8859_6},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str124, ei_iso8859_6},
 #line 149 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str125, ei_iso8859_14},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str125, ei_iso8859_14},
     {-1}, {-1},
 #line 62 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str128, ei_iso8859_1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str128, ei_iso8859_1},
 #line 152 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str129, ei_iso8859_14},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str129, ei_iso8859_14},
 #line 94 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str130, ei_iso8859_6},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str130, ei_iso8859_6},
 #line 95 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str131, ei_iso8859_6},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str131, ei_iso8859_6},
 #line 166 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str132, ei_iso8859_16},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str132, ei_iso8859_16},
     {-1},
 #line 53 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str134, ei_iso8859_1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str134, ei_iso8859_1},
 #line 54 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str135, ei_iso8859_1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str135, ei_iso8859_1},
 #line 139 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str136, ei_iso8859_11},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str136, ei_iso8859_11},
     {-1},
 #line 160 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str138, ei_iso8859_16},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str138, ei_iso8859_16},
 #line 161 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str139, ei_iso8859_16},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str139, ei_iso8859_16},
 #line 177 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str140, ei_cp1252},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str140, ei_cp1252},
     {-1},
 #line 137 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str142, ei_iso8859_11},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str142, ei_iso8859_11},
 #line 138 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str143, ei_iso8859_11},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str143, ei_iso8859_11},
 #line 86 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str144, ei_iso8859_4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str144, ei_iso8859_4},
 #line 356 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str145, ei_johab},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str145, ei_johab},
 #line 162 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str146, ei_iso8859_16},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str146, ei_iso8859_16},
 #line 209 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str147, ei_cp1131},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str147, ei_cp1131},
 #line 93 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str148, ei_iso8859_5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str148, ei_iso8859_5},
     {-1},
 #line 79 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str150, ei_iso8859_4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str150, ei_iso8859_4},
 #line 80 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str151, ei_iso8859_4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str151, ei_iso8859_4},
 #line 153 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str152, ei_iso8859_14},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str152, ei_iso8859_14},
 #line 325 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str153, ei_cp936},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str153, ei_cp936},
 #line 87 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str154, ei_iso8859_5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str154, ei_iso8859_5},
 #line 88 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str155, ei_iso8859_5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str155, ei_iso8859_5},
 #line 159 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str156, ei_iso8859_15},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str156, ei_iso8859_15},
 #line 212 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str157, ei_mac_roman},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str157, ei_mac_roman},
 #line 146 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str158, ei_iso8859_14},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str158, ei_iso8859_14},
 #line 147 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str159, ei_iso8859_14},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str159, ei_iso8859_14},
 #line 120 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str160, ei_iso8859_8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str160, ei_iso8859_8},
 #line 66 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str161, ei_iso8859_2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str161, ei_iso8859_2},
 #line 154 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str162, ei_iso8859_15},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str162, ei_iso8859_15},
 #line 155 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str163, ei_iso8859_15},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str163, ei_iso8859_15},
 #line 128 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str164, ei_iso8859_9},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str164, ei_iso8859_9},
     {-1},
 #line 114 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str166, ei_iso8859_8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str166, ei_iso8859_8},
 #line 115 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str167, ei_iso8859_8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str167, ei_iso8859_8},
     {-1}, {-1},
 #line 121 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str170, ei_iso8859_9},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str170, ei_iso8859_9},
 #line 122 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str171, ei_iso8859_9},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str171, ei_iso8859_9},
 #line 148 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str172, ei_iso8859_14},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str172, ei_iso8859_14},
     {-1},
 #line 156 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str174, ei_iso8859_15},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str174, ei_iso8859_15},
     {-1},
 #line 239 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str176, ei_rk1048},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str176, ei_rk1048},
     {-1}, {-1},
 #line 109 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str179, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str179, ei_iso8859_7},
 #line 70 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str180, ei_iso8859_2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str180, ei_iso8859_2},
     {-1},
 #line 206 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str182, ei_cp866},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str182, ei_cp866},
 #line 144 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str183, ei_iso8859_13},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str183, ei_iso8859_13},
 #line 21 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str184, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str184, ei_ascii},
     {-1},
 #line 63 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str186, ei_iso8859_2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str186, ei_iso8859_2},
 #line 64 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str187, ei_iso8859_2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str187, ei_iso8859_2},
     {-1}, {-1},
 #line 282 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str190, ei_jisx0212},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str190, ei_jisx0212},
     {-1}, {-1},
 #line 359 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str193, ei_local_char},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str193, ei_local_char},
     {-1}, {-1},
 #line 235 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str196, ei_pt154},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str196, ei_pt154},
 #line 74 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str197, ei_iso8859_3},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str197, ei_iso8859_3},
 #line 117 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str198, ei_iso8859_8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str198, ei_iso8859_8},
 #line 354 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str199, ei_cp949},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str199, ei_cp949},
     {-1}, {-1},
 #line 13 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str202, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str202, ei_ascii},
     {-1},
 #line 176 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str204, ei_cp1251},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str204, ei_cp1251},
 #line 165 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str205, ei_iso8859_16},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str205, ei_iso8859_16},
 #line 255 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str206, ei_viscii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str206, ei_viscii},
     {-1}, {-1},
 #line 311 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str209, ei_cp932},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str209, ei_cp932},
 #line 337 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str210, ei_ces_big5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str210, ei_ces_big5},
 #line 258 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str211, ei_tcvn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str211, ei_tcvn},
 #line 318 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str212, ei_iso2022_jpms},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str212, ei_iso2022_jpms},
     {-1}, {-1}, {-1},
 #line 338 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str216, ei_ces_big5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str216, ei_ces_big5},
 #line 173 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str217, ei_cp1250},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str217, ei_cp1250},
     {-1}, {-1},
 #line 199 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str220, ei_cp850},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str220, ei_cp850},
     {-1},
 #line 33 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str222, ei_ucs4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str222, ei_ucs4},
 #line 22 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str223, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str223, ei_ascii},
 #line 58 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str224, ei_iso8859_1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str224, ei_iso8859_1},
 #line 257 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str225, ei_viscii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str225, ei_viscii},
     {-1},
 #line 321 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str227, ei_euc_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str227, ei_euc_cn},
 #line 269 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str228, ei_jisx0201},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str228, ei_jisx0201},
 #line 342 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str229, ei_ces_big5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str229, ei_ces_big5},
     {-1}, {-1}, {-1}, {-1}, {-1},
 #line 341 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str235, ei_ces_big5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str235, ei_ces_big5},
 #line 167 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str236, ei_koi8_r},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str236, ei_koi8_r},
 #line 351 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str237, ei_euc_kr},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str237, ei_euc_kr},
 #line 202 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str238, ei_cp862},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str238, ei_cp862},
 #line 238 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str239, ei_pt154},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str239, ei_pt154},
 #line 35 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str240, ei_ucs4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str240, ei_ucs4},
 #line 14 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str241, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str241, ei_ascii},
 #line 253 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str242, ei_cp874},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str242, ei_cp874},
 #line 350 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str243, ei_euc_kr},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str243, ei_euc_kr},
 #line 256 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str244, ei_viscii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str244, ei_viscii},
     {-1},
 #line 15 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str246, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str246, ei_ascii},
     {-1},
 #line 218 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str248, ei_mac_cyrillic},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str248, ei_mac_cyrillic},
 #line 168 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str249, ei_koi8_r},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str249, ei_koi8_r},
 #line 197 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str250, ei_cp850},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str250, ei_cp850},
 #line 82 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str251, ei_iso8859_4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str251, ei_iso8859_4},
 #line 343 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str252, ei_cp950},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str252, ei_cp950},
     {-1},
 #line 329 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str254, ei_iso2022_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str254, ei_iso2022_cn},
 #line 295 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str255, ei_isoir165},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str255, ei_isoir165},
     {-1},
 #line 237 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str257, ei_pt154},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str257, ei_pt154},
 #line 24 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str258, ei_ucs2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str258, ei_ucs2},
 #line 164 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str259, ei_iso8859_16},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str259, ei_iso8859_16},
 #line 275 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str260, ei_jisx0208},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str260, ei_jisx0208},
 #line 75 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str261, ei_iso8859_3},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str261, ei_iso8859_3},
     {-1},
 #line 330 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str263, ei_iso2022_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str263, ei_iso2022_cn},
 #line 131 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str264, ei_iso8859_10},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str264, ei_iso8859_10},
     {-1}, {-1},
 #line 37 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str267, ei_ucs4le},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str267, ei_ucs4le},
 #line 171 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str268, ei_cp1250},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str268, ei_cp1250},
     {-1}, {-1},
 #line 135 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str271, ei_iso8859_10},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str271, ei_iso8859_10},
     {-1},
 #line 142 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str273, ei_iso8859_13},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str273, ei_iso8859_13},
 #line 326 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str274, ei_cp936},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str274, ei_cp936},
 #line 61 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str275, ei_iso8859_1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str275, ei_iso8859_1},
 #line 247 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str276, ei_tis620},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str276, ei_tis620},
     {-1},
 #line 180 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str278, ei_cp1253},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str278, ei_cp1253},
     {-1}, {-1},
 #line 331 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str281, ei_iso2022_cn_ext},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str281, ei_iso2022_cn_ext},
 #line 246 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str282, ei_tis620},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str282, ei_tis620},
     {-1}, {-1},
 #line 31 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str285, ei_ucs2le},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str285, ei_ucs2le},
 #line 233 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str286, ei_koi8_t},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str286, ei_koi8_t},
     {-1}, {-1}, {-1},
 #line 92 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str290, ei_iso8859_5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str290, ei_iso8859_5},
 #line 85 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str291, ei_iso8859_4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str291, ei_iso8859_4},
     {-1}, {-1}, {-1},
 #line 127 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str295, ei_iso8859_9},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str295, ei_iso8859_9},
 #line 29 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str296, ei_ucs2be},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str296, ei_ucs2be},
     {-1}, {-1}, {-1}, {-1},
 #line 110 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str301, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str301, ei_iso8859_7},
 #line 49 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str302, ei_ucs4internal},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str302, ei_ucs4internal},
     {-1},
 #line 30 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str304, ei_ucs2be},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str304, ei_ucs2be},
     {-1},
 #line 26 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str306, ei_ucs2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str306, ei_ucs2},
 #line 249 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str307, ei_tis620},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str307, ei_tis620},
     {-1}, {-1}, {-1},
 #line 229 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str311, ei_nextstep},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str311, ei_nextstep},
 #line 232 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str312, ei_georgian_ps},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str312, ei_georgian_ps},
     {-1}, {-1}, {-1},
 #line 136 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str316, ei_iso8859_10},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str316, ei_iso8859_10},
     {-1},
 #line 78 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str318, ei_iso8859_3},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str318, ei_iso8859_3},
     {-1},
 #line 47 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str320, ei_ucs2internal},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str320, ei_ucs2internal},
     {-1},
 #line 129 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str322, ei_iso8859_10},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str322, ei_iso8859_10},
 #line 130 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str323, ei_iso8859_10},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str323, ei_iso8859_10},
 #line 71 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str324, ei_iso8859_3},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str324, ei_iso8859_3},
 #line 72 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str325, ei_iso8859_3},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str325, ei_iso8859_3},
 #line 145 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str326, ei_iso8859_13},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str326, ei_iso8859_13},
 #line 69 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str327, ei_iso8859_2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str327, ei_iso8859_2},
     {-1},
 #line 285 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str329, ei_iso646_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str329, ei_iso646_cn},
     {-1}, {-1},
 #line 140 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str332, ei_iso8859_13},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str332, ei_iso8859_13},
 #line 141 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str333, ei_iso8859_13},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str333, ei_iso8859_13},
     {-1}, {-1}, {-1},
 #line 244 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str337, ei_cp1133},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str337, ei_cp1133},
     {-1},
 #line 179 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str339, ei_cp1252},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str339, ei_cp1252},
     {-1},
 #line 56 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str341, ei_iso8859_1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str341, ei_iso8859_1},
     {-1}, {-1},
 #line 296 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str344, ei_ksc5601},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str344, ei_ksc5601},
     {-1}, {-1}, {-1}, {-1},
 #line 211 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str349, ei_mac_roman},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str349, ei_mac_roman},
     {-1}, {-1},
 #line 322 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str352, ei_euc_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str352, ei_euc_cn},
     {-1},
 #line 208 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str354, ei_cp866},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str354, ei_cp866},
 #line 34 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str355, ei_ucs4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str355, ei_ucs4},
     {-1},
 #line 81 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str357, ei_iso8859_4},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str357, ei_iso8859_4},
     {-1},
 #line 89 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str359, ei_iso8859_5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str359, ei_iso8859_5},
     {-1},
 #line 38 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str361, ei_utf16},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str361, ei_utf16},
     {-1},
 #line 241 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str363, ei_rk1048},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str363, ei_rk1048},
 #line 226 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str364, ei_hp_roman8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str364, ei_hp_roman8},
 #line 116 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str365, ei_iso8859_8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str365, ei_iso8859_8},
 #line 32 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str366, ei_ucs2le},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str366, ei_ucs2le},
     {-1}, {-1},
 #line 123 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str369, ei_iso8859_9},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str369, ei_iso8859_9},
     {-1}, {-1},
 #line 265 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str372, ei_iso646_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str372, ei_iso646_jp},
 #line 25 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str373, ei_ucs2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str373, ei_ucs2},
     {-1},
 #line 243 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str375, ei_mulelao},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str375, ei_mulelao},
 #line 242 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str376, ei_rk1048},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str376, ei_rk1048},
 #line 157 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str377, ei_iso8859_15},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str377, ei_iso8859_15},
 #line 198 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str378, ei_cp850},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str378, ei_cp850},
     {-1},
 #line 248 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str380, ei_tis620},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str380, ei_tis620},
     {-1},
 #line 98 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str382, ei_iso8859_6},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str382, ei_iso8859_6},
     {-1}, {-1}, {-1},
 #line 298 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str386, ei_ksc5601},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str386, ei_ksc5601},
     {-1},
 #line 324 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str388, ei_ces_gbk},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str388, ei_ces_gbk},
 #line 23 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str389, ei_utf8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str389, ei_utf8},
     {-1},
 #line 230 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str391, ei_armscii_8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str391, ei_armscii_8},
 #line 12 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str392, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str392, ei_ascii},
     {-1}, {-1}, {-1}, {-1}, {-1},
 #line 108 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str398, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str398, ei_iso8859_7},
 #line 323 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str399, ei_euc_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str399, ei_euc_cn},
     {-1}, {-1}, {-1},
 #line 143 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str403, ei_iso8859_13},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str403, ei_iso8859_13},
 #line 301 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str404, ei_ksc5601},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str404, ei_ksc5601},
 #line 287 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str405, ei_iso646_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str405, ei_iso646_cn},
     {-1}, {-1},
 #line 188 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str408, ei_cp1255},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str408, ei_cp1255},
 #line 266 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str409, ei_iso646_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str409, ei_iso646_jp},
     {-1},
 #line 276 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str411, ei_jisx0208},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str411, ei_jisx0208},
     {-1},
 #line 132 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str413, ei_iso8859_10},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str413, ei_iso8859_10},
     {-1}, {-1},
 #line 40 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str416, ei_utf16le},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str416, ei_utf16le},
     {-1},
 #line 36 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str418, ei_ucs4be},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str418, ei_ucs4be},
     {-1},
 #line 192 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str420, ei_cp1257},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str420, ei_cp1257},
 #line 18 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str421, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str421, ei_ascii},
     {-1}, {-1},
 #line 352 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str424, ei_euc_kr},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str424, ei_euc_kr},
 #line 357 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str425, ei_iso2022_kr},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str425, ei_iso2022_kr},
 #line 290 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str426, ei_gb2312},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str426, ei_gb2312},
     {-1}, {-1},
 #line 97 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str429, ei_iso8859_6},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str429, ei_iso8859_6},
 #line 224 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str430, ei_mac_thai},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str430, ei_mac_thai},
 #line 335 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str431, ei_euc_tw},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str431, ei_euc_tw},
     {-1},
 #line 304 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str433, ei_euc_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str433, ei_euc_jp},
 #line 358 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str434, ei_iso2022_kr},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str434, ei_iso2022_kr},
     {-1},
 #line 27 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str436, ei_ucs2be},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str436, ei_ucs2be},
 #line 334 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str437, ei_euc_tw},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str437, ei_euc_tw},
     {-1},
 #line 17 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str439, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str439, ei_ascii},
 #line 111 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str440, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str440, ei_iso8859_7},
     {-1},
 #line 215 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str442, ei_mac_iceland},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str442, ei_mac_iceland},
 #line 328 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str443, ei_gb18030},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str443, ei_gb18030},
 #line 73 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str444, ei_iso8859_3},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str444, ei_iso8859_3},
 #line 101 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str445, ei_iso8859_6},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str445, ei_iso8859_6},
 #line 231 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str446, ei_georgian_academy},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str446, ei_georgian_academy},
     {-1},
 #line 225 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str448, ei_hp_roman8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str448, ei_hp_roman8},
     {-1}, {-1}, {-1}, {-1},
 #line 251 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str453, ei_tis620},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str453, ei_tis620},
     {-1},
 #line 28 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str455, ei_ucs2be},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str455, ei_ucs2be},
     {-1}, {-1}, {-1},
 #line 260 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str459, ei_tcvn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str459, ei_tcvn},
 #line 113 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str460, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str460, ei_iso8859_7},
 #line 289 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str461, ei_iso646_cn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str461, ei_iso646_cn},
     {-1},
 #line 214 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str463, ei_mac_centraleurope},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str463, ei_mac_centraleurope},
 #line 112 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str464, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str464, ei_iso8859_7},
 #line 77 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str465, ei_iso8859_3},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str465, ei_iso8859_3},
 #line 103 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str466, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str466, ei_iso8859_7},
 #line 104 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str467, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str467, ei_iso8859_7},
 #line 45 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str468, ei_utf7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str468, ei_utf7},
 #line 19 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str469, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str469, ei_ascii},
 #line 333 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str470, ei_hz},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str470, ei_hz},
     {-1}, {-1},
 #line 303 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str473, ei_euc_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str473, ei_euc_jp},
 #line 46 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str474, ei_utf7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str474, ei_utf7},
     {-1},
 #line 210 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str476, ei_mac_roman},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str476, ei_mac_roman},
 #line 259 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str477, ei_tcvn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str477, ei_tcvn},
     {-1},
 #line 302 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str479, ei_euc_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str479, ei_euc_jp},
     {-1}, {-1}, {-1},
 #line 263 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str483, ei_iso646_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str483, ei_iso646_jp},
     {-1}, {-1}, {-1}, {-1}, {-1},
 #line 348 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str489, ei_big5hkscs2008},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str489, ei_big5hkscs2008},
 #line 292 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str490, ei_gb2312},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str490, ei_gb2312},
     {-1},
 #line 190 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str492, ei_cp1256},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str492, ei_cp1256},
     {-1},
 #line 175 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str494, ei_cp1251},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str494, ei_cp1251},
 #line 347 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str495, ei_big5hkscs2008},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str495, ei_big5hkscs2008},
 #line 360 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str496, ei_local_wchar_t},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str496, ei_local_wchar_t},
 #line 96 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str497, ei_iso8859_6},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str497, ei_iso8859_6},
     {-1},
 #line 55 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str499, ei_iso8859_1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str499, ei_iso8859_1},
     {-1}, {-1},
 #line 184 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str502, ei_cp1254},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str502, ei_cp1254},
     {-1},
 #line 187 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str504, ei_cp1255},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str504, ei_cp1255},
     {-1}, {-1}, {-1}, {-1}, {-1},
 #line 196 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str510, ei_cp1258},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str510, ei_cp1258},
     {-1},
 #line 41 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str512, ei_utf32},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str512, ei_utf32},
     {-1}, {-1}, {-1},
 #line 119 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str516, ei_iso8859_8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str516, ei_iso8859_8},
 #line 228 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str517, ei_hp_roman8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str517, ei_hp_roman8},
     {-1},
 #line 284 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str519, ei_jisx0212},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str519, ei_jisx0212},
 #line 178 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str520, ei_cp1252},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str520, ei_cp1252},
     {-1},
 #line 240 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str522, ei_rk1048},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str522, ei_rk1048},
     {-1}, {-1},
 #line 65 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str525, ei_iso8859_2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str525, ei_iso8859_2},
     {-1}, {-1}, {-1},
 #line 100 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str529, ei_iso8859_6},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str529, ei_iso8859_6},
 #line 213 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str530, ei_mac_roman},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str530, ei_mac_roman},
     {-1}, {-1}, {-1},
 #line 297 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str534, ei_ksc5601},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str534, ei_ksc5601},
     {-1},
 #line 262 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str536, ei_iso646_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str536, ei_iso646_jp},
 #line 277 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str537, ei_jisx0208},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str537, ei_jisx0208},
     {-1},
 #line 43 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str539, ei_utf32le},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str539, ei_utf32le},
     {-1}, {-1}, {-1},
 #line 250 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str543, ei_tis620},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str543, ei_tis620},
     {-1}, {-1},
 #line 245 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str546, ei_cp1133},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str546, ei_cp1133},
 #line 307 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str547, ei_sjis},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str547, ei_sjis},
 #line 306 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str548, ei_sjis},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str548, ei_sjis},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 204 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str555, ei_cp862},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str555, ei_cp862},
     {-1},
 #line 340 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str557, ei_ces_big5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str557, ei_ces_big5},
     {-1}, {-1},
 #line 300 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str560, ei_ksc5601},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str560, ei_ksc5601},
     {-1},
 #line 216 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str562, ei_mac_croatian},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str562, ei_mac_croatian},
 #line 339 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str563, ei_ces_big5},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str563, ei_ces_big5},
     {-1}, {-1},
 #line 327 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str566, ei_cp936},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str566, ei_cp936},
 #line 39 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str567, ei_utf16be},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str567, ei_utf16be},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 169 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str574, ei_koi8_u},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str574, ei_koi8_u},
     {-1}, {-1}, {-1}, {-1}, {-1},
 #line 170 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str580, ei_koi8_ru},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str580, ei_koi8_ru},
     {-1}, {-1}, {-1},
 #line 172 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str584, ei_cp1250},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str584, ei_cp1250},
 #line 182 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str585, ei_cp1253},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str585, ei_cp1253},
     {-1}, {-1}, {-1},
 #line 181 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str589, ei_cp1253},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str589, ei_cp1253},
     {-1},
 #line 220 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str591, ei_mac_greek},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str591, ei_mac_greek},
 #line 200 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str592, ei_cp850},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str592, ei_cp850},
     {-1},
 #line 106 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str594, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str594, ei_iso8859_7},
     {-1},
 #line 274 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str596, ei_jisx0208},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str596, ei_jisx0208},
 #line 20 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str597, ei_ascii},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str597, ei_ascii},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1},
 #line 314 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str608, ei_iso2022_jp1},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str608, ei_iso2022_jp1},
     {-1},
 #line 317 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str610, ei_iso2022_jpms},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str610, ei_iso2022_jpms},
     {-1}, {-1},
 #line 279 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str613, ei_jisx0212},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str613, ei_jisx0212},
     {-1}, {-1}, {-1}, {-1},
 #line 336 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str618, ei_euc_tw},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str618, ei_euc_tw},
     {-1}, {-1}, {-1}, {-1}, {-1},
 #line 310 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str624, ei_sjis},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str624, ei_sjis},
 #line 118 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str625, ei_iso8859_8},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str625, ei_iso8859_8},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 315 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str634, ei_iso2022_jp2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str634, ei_iso2022_jp2},
 #line 99 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str635, ei_iso8859_6},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str635, ei_iso8859_6},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 316 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str642, ei_iso2022_jp2},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str642, ei_iso2022_jp2},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 267 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str651, ei_jisx0201},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str651, ei_jisx0201},
     {-1}, {-1}, {-1},
 #line 254 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str655, ei_cp874},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str655, ei_cp874},
     {-1}, {-1}, {-1}, {-1},
 #line 193 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str660, ei_cp1257},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str660, ei_cp1257},
 #line 312 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str661, ei_iso2022_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str661, ei_iso2022_jp},
     {-1}, {-1}, {-1},
 #line 105 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str665, ei_iso8859_7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str665, ei_iso8859_7},
 #line 278 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str666, ei_jisx0208},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str666, ei_jisx0208},
     {-1}, {-1}, {-1},
 #line 313 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str670, ei_iso2022_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str670, ei_iso2022_jp},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 223 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str680, ei_mac_arabic},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str680, ei_mac_arabic},
     {-1}, {-1},
 #line 271 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str683, ei_jisx0208},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str683, ei_jisx0208},
 #line 268 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str684, ei_jisx0201},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str684, ei_jisx0201},
     {-1}, {-1}, {-1}, {-1},
 #line 44 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str689, ei_utf7},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str689, ei_utf7},
 #line 42 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str690, ei_utf32be},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str690, ei_utf32be},
     {-1},
 #line 345 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str692, ei_big5hkscs2001},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str692, ei_big5hkscs2001},
     {-1},
 #line 281 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str694, ei_jisx0212},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str694, ei_jisx0212},
     {-1}, {-1},
 #line 280 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str697, ei_jisx0212},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str697, ei_jisx0212},
     {-1}, {-1},
 #line 346 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str700, ei_big5hkscs2004},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str700, ei_big5hkscs2004},
     {-1},
 #line 221 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str702, ei_mac_turkish},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str702, ei_mac_turkish},
     {-1}, {-1}, {-1}, {-1}, {-1},
 #line 349 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str708, ei_big5hkscs2008},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str708, ei_big5hkscs2008},
     {-1},
 #line 344 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str710, ei_big5hkscs1999},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str710, ei_big5hkscs1999},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1}, {-1},
 #line 185 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str725, ei_cp1254},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str725, ei_cp1254},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 50 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str732, ei_ucs4swapped},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str732, ei_ucs4swapped},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 219 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str749, ei_mac_ukraine},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str749, ei_mac_ukraine},
 #line 48 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str750, ei_ucs2swapped},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str750, ei_ucs2swapped},
     {-1},
 #line 261 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str752, ei_tcvn},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str752, ei_tcvn},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1},
 #line 273 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str774, ei_jisx0208},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str774, ei_jisx0208},
     {-1}, {-1}, {-1}, {-1},
 #line 272 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str779, ei_jisx0208},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str779, ei_jisx0208},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 222 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str796, ei_mac_hebrew},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str796, ei_mac_hebrew},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 191 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str803, ei_cp1256},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str803, ei_cp1256},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 52 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str811, ei_java},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str811, ei_java},
     {-1},
 #line 217 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str813, ei_mac_romania},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str813, ei_mac_romania},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1},
 #line 309 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str827, ei_sjis},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str827, ei_sjis},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 194 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str837, ei_cp1257},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str837, ei_cp1257},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1},
 #line 305 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str866, ei_euc_jp},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str866, ei_euc_jp},
     {-1}, {-1},
 #line 355 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str869, ei_johab},
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str869, ei_johab},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
@@ -1706,23 +1706,17 @@ static const struct alias aliases[] =
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
     {-1}, {-1}, {-1}, {-1}, {-1}, {-1},
 #line 270 "./SMP/tools/aliases.gperf"
-    {(int)(intptr_t)&((struct stringpool_t *)0)->stringpool_str921, ei_jisx0201}
+    {(int)(size_t)&((struct stringpool_t *)0)->stringpool_str921, ei_jisx0201}
   };
 
-#ifdef __GNUC__
-__inline
-#if defined __GNUC_STDC_INLINE__ || defined __GNUC_GNU_INLINE__
-__attribute__ ((__gnu_inline__))
-#endif
-#endif
 const struct alias *
-aliases_lookup (register const char *str, register unsigned int len)
+aliases_lookup (register const char *str, register size_t len)
 {
   if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
     {
-      register int key = aliases_hash (str, len);
+      register unsigned int key = aliases_hash (str, len);
 
-      if (key <= MAX_HASH_VALUE && key >= 0)
+      if (key <= MAX_HASH_VALUE)
         {
           register int o = aliases[key].name;
           if (o >= 0)
