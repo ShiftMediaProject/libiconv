@@ -1,52 +1,52 @@
 diff --git a/Makefile.devel b/Makefile.devel
-index 5fb5ea4..829dfb9 100644
+index 3102ad2..1867825 100644
 --- a/Makefile.devel
 +++ b/Makefile.devel
-@@ -117,6 +117,7 @@ include/iconv.h.build.in : include/iconv.h.in include/export.h
+@@ -119,6 +119,7 @@ include/iconv.h.build.in : include/iconv.h.in include/export.h
  lib/aliases.h lib/canonical.h lib/canonical_local.h : lib/encodings.def lib/encodings_local.def lib/genaliases.c
  	$(CC) $(CFLAGS) lib/genaliases.c -o genaliases
  	./genaliases lib/aliases.gperf canonical.sh canonical_local.sh
 +	dos2unix lib/aliases.gperf
  	$(RM) genaliases
  	$(GPERF) -m 10 lib/aliases.gperf > tmp.h
- 	$(CP) tmp.h lib/aliases.h
-@@ -127,6 +128,7 @@ lib/aliases.h lib/canonical.h lib/canonical_local.h : lib/encodings.def lib/enco
+ 	sed -e 's/^\(const struct alias \)/static \1/' < tmp.h > lib/aliases.h
+@@ -129,6 +130,7 @@ lib/aliases.h lib/canonical.h lib/canonical_local.h : lib/encodings.def lib/enco
  lib/aliases_sysaix.h lib/canonical_sysaix.h lib/canonical_local_sysaix.h : lib/encodings.def lib/encodings_local.def lib/genaliases.c
  	$(CC) $(CFLAGS) -DUSE_AIX_ALIASES lib/genaliases.c -o genaliases
  	./genaliases lib/aliases_sysaix.gperf canonical.sh canonical_local.sh
 +	dos2unix lib/aliases_sysaix.gperf
  	$(RM) genaliases
  	$(GPERF) -m 10 lib/aliases_sysaix.gperf > tmp.h
- 	$(CP) tmp.h lib/aliases_sysaix.h
-@@ -137,6 +139,7 @@ lib/aliases_sysaix.h lib/canonical_sysaix.h lib/canonical_local_sysaix.h : lib/e
+ 	sed -e 's/^\(const struct alias \)/static \1/' < tmp.h > lib/aliases_sysaix.h
+@@ -139,6 +141,7 @@ lib/aliases_sysaix.h lib/canonical_sysaix.h lib/canonical_local_sysaix.h : lib/e
  lib/aliases_syshpux.h lib/canonical_syshpux.h lib/canonical_local_syshpux.h : lib/encodings.def lib/encodings_local.def lib/genaliases.c
  	$(CC) $(CFLAGS) -DUSE_HPUX_ALIASES lib/genaliases.c -o genaliases
  	./genaliases lib/aliases_syshpux.gperf canonical.sh canonical_local.sh
 +	dos2unix lib/aliases_syshpux.gperf
  	$(RM) genaliases
  	$(GPERF) -m 10 lib/aliases_syshpux.gperf > tmp.h
- 	$(CP) tmp.h lib/aliases_syshpux.h
-@@ -147,6 +150,7 @@ lib/aliases_syshpux.h lib/canonical_syshpux.h lib/canonical_local_syshpux.h : li
+ 	sed -e 's/^\(const struct alias \)/static \1/' < tmp.h > lib/aliases_syshpux.h
+@@ -149,6 +152,7 @@ lib/aliases_syshpux.h lib/canonical_syshpux.h lib/canonical_local_syshpux.h : li
  lib/aliases_sysosf1.h lib/canonical_sysosf1.h lib/canonical_local_sysosf1.h : lib/encodings.def lib/encodings_local.def lib/genaliases.c
  	$(CC) $(CFLAGS) -DUSE_OSF1_ALIASES lib/genaliases.c -o genaliases
  	./genaliases lib/aliases_sysosf1.gperf canonical.sh canonical_local.sh
 +	dos2unix lib/aliases_sysosf1.gperf
  	$(RM) genaliases
  	$(GPERF) -m 10 lib/aliases_sysosf1.gperf > tmp.h
- 	$(CP) tmp.h lib/aliases_sysosf1.h
-@@ -157,6 +161,7 @@ lib/aliases_sysosf1.h lib/canonical_sysosf1.h lib/canonical_local_sysosf1.h : li
+ 	sed -e 's/^\(const struct alias \)/static \1/' < tmp.h > lib/aliases_sysosf1.h
+@@ -159,6 +163,7 @@ lib/aliases_sysosf1.h lib/canonical_sysosf1.h lib/canonical_local_sysosf1.h : li
  lib/aliases_syssolaris.h lib/canonical_syssolaris.h lib/canonical_local_syssolaris.h : lib/encodings.def lib/encodings_local.def lib/genaliases.c
  	$(CC) $(CFLAGS) -DUSE_SOLARIS_ALIASES lib/genaliases.c -o genaliases
  	./genaliases lib/aliases_syssolaris.gperf canonical.sh canonical_local.sh
 +	dos2unix lib/aliases_syssolaris.gperf
  	$(RM) genaliases
  	$(GPERF) -m 10 lib/aliases_syssolaris.gperf > tmp.h
- 	$(CP) tmp.h lib/aliases_syssolaris.h
+ 	sed -e 's/^\(const struct alias \)/static \1/' < tmp.h > lib/aliases_syssolaris.h
 diff --git a/lib/iconv.c b/lib/iconv.c
-index b7a04f8..4a85999 100644
+index 673457e..ecb1a4e 100644
 --- a/lib/iconv.c
 +++ b/lib/iconv.c
-@@ -172,7 +172,7 @@ static const struct stringpool2_t stringpool2_contents = {
+@@ -184,7 +184,7 @@ static const struct stringpool2_t stringpool2_contents = {
  };
  #define stringpool2 ((const char *) &stringpool2_contents)
  static const struct alias sysdep_aliases[] = {
