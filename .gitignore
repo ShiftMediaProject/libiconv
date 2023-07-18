@@ -145,6 +145,7 @@
 /srcm4/alloca.m4
 /srcm4/asm-underscore.m4
 /srcm4/assert_h.m4
+/srcm4/build-to-host.m4
 /srcm4/builtin-expect.m4
 /srcm4/c-bool.m4
 /srcm4/canonicalize.m4
