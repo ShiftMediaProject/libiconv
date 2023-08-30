@@ -1,4 +1,4 @@
-dnl Copyright (C) 1999-2011, 2016, 2018-2022 Free Software Foundation, Inc.
+dnl Copyright (C) 1999-2011, 2016, 2018-2023 Free Software Foundation, Inc.
 dnl This file is part of the GNU LIBICONV Library.
 dnl
 dnl The GNU LIBICONV Library is free software; you can redistribute it
@@ -81,10 +81,10 @@ dnl Prepares the libtool configuration for handling of Windows resources, and
 dnl sets the RC variable to a program that compiles Windows resource files.
 LT_LANG([Windows Resource])
 
-dnl On mingw and Cygwin, we can activate special Makefile rules which add
-dnl version information to the executables.
+dnl On native Windows and Cygwin, we can activate special Makefile rules which
+dnl add version information to the executables.
 case "$host_os" in
-  mingw* | cygwin*) is_woe32=yes ;;
+  mingw* | windows* | cygwin*) is_woe32=yes ;;
   *) is_woe32=no ;;
 esac
 WOE32=$is_woe32
@@ -166,7 +166,8 @@ m4_popdef([AC_REPLACE_FUNCS])
 m4_popdef([AC_LIBOBJ])
 AC_SUBST([SRCLIBOBJS])
 
-dnl Compilation on mingw and Cygwin needs special Makefile rules, because
+dnl Compilation on native Windows and Cygwin needs special Makefile rules,
+dnl because
 dnl 1. when we install a shared library, we must arrange to export
 dnl    auxiliary pointer variables for every exported variable,
 dnl 2. when we install a shared library and a static library simultaneously,
@@ -175,7 +176,7 @@ dnl    must arrange to define the auxiliary pointer variables for the
 dnl    exported variables _also_ in the static library.
 if test "$enable_shared" = yes; then
   case "$host_os" in
-    mingw* | cygwin*) is_woe32dll=yes ;;
+    mingw* | windows* | cygwin*) is_woe32dll=yes ;;
     *) is_woe32dll=no ;;
   esac
 else
