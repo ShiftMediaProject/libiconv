@@ -1,3 +1,14 @@
+2023-09-06  Bruno Haible  <bruno@clisp.org>
+
+	Don't export symbols from static MSVC .obj files.
+	Suggested by Dmitry Bely <dmitry.bely@gmail.com> in
+	<https://lists.gnu.org/archive/html/bug-gnu-libiconv/2023-08/msg00002.html>.
+	* include/export.h: Add a copyright notice. Set LIBCHARSET_DLL_EXPORTED
+	to empty on MSVC when DLL_EXPORT is not defined.
+	* Makefile.devel (include/libcharset.h.build.in,
+	include/localcharset.h.build.in): Filter out the second copyright
+	notice.
+
 2023-05-21  Bruno Haible  <bruno@clisp.org>
 
 	Support creating shared libraries on Hurd/x86_64.

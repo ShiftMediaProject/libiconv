@@ -136,9 +136,10 @@ config.h.in : configure.ac $(AUTOCONF_FILES)
 
 
 include/iconv.h.build.in : include/iconv.h.in include/export.h
-	sed -e 's/extern \([^"]\)/extern LIBICONV_DLL_EXPORTED \1/' \
-	    -e '/_LIBICONV_VERSION/r include/export.h' \
-	  < $< > $@
+	cat $< \
+	| sed -e 's/extern \([^"]\)/extern LIBICONV_DLL_EXPORTED \1/' \
+	      -e '/_LIBICONV_VERSION/r include/export.h' \
+	| sed -e '/_LIBICONV_VERSION/,/[*][/]$$/{/_LIBICONV_VERSION/!d;}' > $@
 
 
 lib/aliases.h lib/canonical.h lib/canonical_local.h : lib/encodings.def lib/encodings_local.def lib/genaliases.c

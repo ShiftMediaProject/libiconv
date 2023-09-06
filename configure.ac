@@ -170,7 +170,9 @@ dnl Compilation on native Windows and Cygwin needs special Makefile rules,
 dnl because
 dnl 1. when we install a shared library, we must arrange to export
 dnl    auxiliary pointer variables for every exported variable,
-dnl 2. when we install a shared library and a static library simultaneously,
+dnl 2. when we install a shared library and a static library simultaneously
+dnl    (e.g. when the user overrides the 'disable-static' default above by
+dnl    passing the configure options --enable-shared --enable-static),
 dnl    the include file specifies __declspec(dllimport) and therefore we
 dnl    must arrange to define the auxiliary pointer variables for the
 dnl    exported variables _also_ in the static library.
@@ -192,8 +194,13 @@ fi
 AC_SUBST([DLL_VARIABLE])
 
 AH_BOTTOM([
-/* On Windows, variables that may be in a DLL must be marked specially.  */
-#if defined _MSC_VER && defined _DLL
+/* On Windows, variables that may be in a DLL must be marked specially.
+   The symbols marked with DLL_VARIABLE should be exported if and only if the
+   object file gets included in a DLL.  Libtool, on Windows platforms, defines
+   the C macro DLL_EXPORT (together with PIC) when compiling for a DLL
+   and does not define it when compiling an object file meant to be linked
+   statically into some executable.  */
+#if defined _MSC_VER && defined DLL_EXPORT
 # define DLL_VARIABLE __declspec (dllimport)
 #else
 # define DLL_VARIABLE
