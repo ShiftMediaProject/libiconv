@@ -1,3 +1,9 @@
+2023-09-07  Bruno Haible  <bruno@clisp.org>
+
+	Sync woe32dll/export.h with GNU libunistring and GNU gettext.
+	* woe32dll/export.h: Update comments.
+	(IMP): Define correctly for 64-bit Windows platforms.
+
 2023-09-06  Bruno Haible  <bruno@clisp.org>
 
 	Don't export symbols from static MSVC .obj files.
