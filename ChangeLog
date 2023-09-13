@@ -1,3 +1,20 @@
+2023-09-13  Bruno Haible  <bruno@clisp.org>
+
+	Simplify the library: Don't compile relocatable.c any more.
+	The library does not need relocatable.h any more since 2018-09-22.
+	* lib/relocatable.h: Remove file.
+	* lib/relocatable.c: Remove file.
+	* lib/compat.c: New file.
+	* lib/Makefile.in (DEFS): Don't define LIBDIR, BUILDING_DLL,
+	ENABLE_RELOCATABLE, IN_LIBRARY, INSTALLDIR, NO_XMALLOC,
+	set_relocation_prefix, relocate, relocate2.
+	(SOURCES): Remove relocatable.c. Add compat.c.
+	(OBJECTS): Remove relocatable.lo. Add compat.lo.
+	(localcharset.lo): Update dependencies.
+	(relocatable.lo): Remove rule.
+	(compat.lo): Add rule.
+	(SOURCE_FILES): Remove relocatable.h, relocatable.c. Add compat.c.
+
 2023-09-07  Bruno Haible  <bruno@clisp.org>
 
 	Sync woe32dll/export.h with GNU libunistring and GNU gettext.
