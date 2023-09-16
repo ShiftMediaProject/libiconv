@@ -19,8 +19,8 @@ LDFLAGS = @LDFLAGS@ $(LDFLAGS_@WOE32DLL@)
 LDFLAGS_yes = -Wl,--export-all-symbols
 LDFLAGS_no =
 INCLUDES = -I. -I$(srcdir) -I../include -I$(srcdir)/../include -I.. -I$(srcdir)/..
-# -DBUILDING_LIBICONV: Change expansion of LIBICONV_DLL_EXPORTED macro.
-# -DBUILDING_LIBCHARSET: Change expansion of LIBCHARSET_DLL_EXPORTED macro in
+# -DBUILDING_LIBICONV: Change expansion of LIBICONV_SHLIB_EXPORTED macro.
+# -DBUILDING_LIBCHARSET: Change expansion of LIBCHARSET_SHLIB_EXPORTED macro in
 # localcharset.h.
 DEFS = -DBUILDING_LIBICONV -DBUILDING_LIBCHARSET @DEFS@
 LIBTOOL = @LIBTOOL@

@@ -1,3 +1,17 @@
+2023-09-16  Bruno Haible  <bruno@clisp.org>
+
+	Fix a misnomer.
+	* include/export.h (LIBCHARSET_SHLIB_EXPORTED): Renamed from
+	LIBCHARSET_DLL_EXPORTED. Prefer the term "shared library", since the
+	term "DLL" applies only to Windows.
+	* Makefile.devel (include/libcharset.h.build.in,
+	include/localcharset.h.build.in): Insert LIBCHARSET_SHLIB_EXPORTED
+	instead of LIBCHARSET_DLL_EXPORTED.
+	* lib/relocatable-stub.c (libcharset_set_relocation_prefix): Use
+	LIBCHARSET_SHLIB_EXPORTED instead of LIBCHARSET_DLL_EXPORTED.
+	* lib/Makefile.in (DEFS): Update comment.
+	* Makefile.in (install-lib): Update comment.
+
 2023-09-06  Bruno Haible  <bruno@clisp.org>
 
 	Don't export symbols from static MSVC .obj files.

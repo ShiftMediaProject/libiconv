@@ -1,3 +1,15 @@
+2023-09-16  Bruno Haible  <bruno@clisp.org>
+
+	Fix a misnomer.
+	* include/export.h (LIBICONV_SHLIB_EXPORTED): Renamed from
+	LIBICONV_DLL_EXPORTED. Prefer the term "shared library", since the term
+	"DLL" applies only to Windows.
+	* Makefile.devel (include/iconv.h.build.in): Insert
+	LIBICONV_SHLIB_EXPORTED instead of LIBICONV_DLL_EXPORTED.
+	* configure.ac (DLL_VARIABLE): Update comment.
+	* lib/Makefile.in (DEFS): Update comment.
+	* woe32dll/export.h: Update comment.
+
 2023-09-13  Bruno Haible  <bruno@clisp.org>
 
 	Simplify the library: Don't compile relocatable.c any more.
