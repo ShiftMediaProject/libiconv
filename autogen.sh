@@ -4,7 +4,7 @@
 # also regenerates all aclocal.m4, config.h.in, Makefile.in, configure files
 # with new versions of autoconf or automake.
 #
-# This script requires autoconf-2.63..2.71 and automake-1.11..1.16 in the PATH.
+# This script requires autoconf-2.63..2.72 and automake-1.11..1.16 in the PATH.
 # It also requires
 #   - the gperf program.
 
