@@ -1,3 +1,9 @@
+2024-04-04  Bruno Haible  <bruno@clisp.org>
+
+	Fix macro file 'serial' numbers for 'aclocal --install'.
+	* gnulib-local/m4/alloca.m4: Make 'serial' effective. Set value to 100,
+	in order to override gnulib's alloca.m4.
+
 2023-12-30  Bruno Haible  <bruno@clisp.org>
 
 	Switch to autoconf 2.72.
