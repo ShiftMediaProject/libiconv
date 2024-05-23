@@ -1,3 +1,8 @@
+2024-05-23  Bruno Haible  <bruno@clisp.org>
+
+	INSTALL.windows: Fix MSVC instructions.
+	* INSTALL.windows: Mention the tools needed for 'windres'.
+
 2024-04-04  Bruno Haible  <bruno@clisp.org>
 
 	Fix macro file 'serial' numbers for 'aclocal --install'.
