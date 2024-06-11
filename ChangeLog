@@ -1,3 +1,10 @@
+2024-06-11  Bruno Haible  <bruno@clisp.org>
+
+	POSIX compliance: Interpret '-' file name as standard input.
+	Reported by Brian Inglis at <https://savannah.gnu.org/bugs/?65874>.
+	* src/iconv.c (main): Recognize the argument '-' as denoting standard
+	input.
+
 2024-05-23  Bruno Haible  <bruno@clisp.org>
 
 	INSTALL.windows: Fix MSVC instructions.
