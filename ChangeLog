@@ -1,3 +1,13 @@
+2024-07-12  Bruno Haible  <bruno@clisp.org>
+
+	Assume wchar_t.
+	* include/iconv.h.in (iconv_wchar_mb_to_wc_fallback,
+	iconv_wchar_wc_to_mb_fallback): Assume HAVE_WCHAR_T is 1.
+	* src/iconv.c (ilseq_wchar_subst_buffer, subst_mb_to_wc_fallback,
+	subst_wc_to_mb_fallback, main): Likewise.
+	* configure.ac (HAVE_WCHAR_T): Remove variable.
+	(gt_TYPE_WCHAR_T): Remove invocation.
+
 2024-06-11  Bruno Haible  <bruno@clisp.org>
 
 	POSIX compliance: Interpret '-' file name as standard input.

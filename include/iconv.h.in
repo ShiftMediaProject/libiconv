@@ -1,4 +1,4 @@
-/* Copyright (C) 1999-2023 Free Software Foundation, Inc.
+/* Copyright (C) 1999-2024 Free Software Foundation, Inc.
    This file is part of the GNU LIBICONV Library.
 
    The GNU LIBICONV Library is free software; you can redistribute it
@@ -173,7 +173,6 @@ typedef void (*iconv_unicode_uc_to_mb_fallback)
                                          void* callback_arg),
               void* callback_arg,
               void* data);
-#if @HAVE_WCHAR_T@
 /* Fallback function.  Invoked when a number of bytes could not be converted to
    a wide character.  This function should process all bytes from inbuf and may
    produce replacement wide characters by calling the write_replacement
@@ -194,12 +193,6 @@ typedef void (*iconv_wchar_wc_to_mb_fallback)
                                          void* callback_arg),
               void* callback_arg,
               void* data);
-#else
-/* If the wchar_t type does not exist, these two fallback functions are never
-   invoked.  Their argument list therefore does not matter.  */
-typedef void (*iconv_wchar_mb_to_wc_fallback) ();
-typedef void (*iconv_wchar_wc_to_mb_fallback) ();
-#endif
 /* Set of fallbacks. */
 struct iconv_fallbacks {
   iconv_unicode_mb_to_uc_fallback mb_to_uc_fallback;

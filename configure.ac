@@ -1,4 +1,4 @@
-dnl Copyright (C) 1999-2011, 2016, 2018-2023 Free Software Foundation, Inc.
+dnl Copyright (C) 1999-2024 Free Software Foundation, Inc.
 dnl This file is part of the GNU LIBICONV Library.
 dnl
 dnl The GNU LIBICONV Library is free software; you can redistribute it
@@ -101,7 +101,6 @@ AM_GNU_GETTEXT([external], [need-ngettext])
 dnl           checks for typedefs
 
 AC_TYPE_MBSTATE_T
-gt_TYPE_WCHAR_T
 
 dnl           checks for header files, functions and declarations
 
@@ -111,13 +110,6 @@ else
   ICONV_CONST=""
 fi
 AC_SUBST([ICONV_CONST])
-
-if test $gt_cv_c_wchar_t = yes; then
-  HAVE_WCHAR_T=1
-else
-  HAVE_WCHAR_T=0
-fi
-AC_SUBST([HAVE_WCHAR_T])
 
 AC_CHECK_FUNCS([getc_unlocked mbrtowc wcrtomb mbsinit setlocale])
 

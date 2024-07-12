@@ -424,10 +424,8 @@ static size_t ilseq_unicode_subst_size;
 
 /* Buffer of size ilseq_byte_subst_size+1. */
 static char* ilseq_byte_subst_buffer;
-#if HAVE_WCHAR_T
 /* Buffer of size ilseq_wchar_subst_size+1. */
 static char* ilseq_wchar_subst_buffer;
-#endif
 /* Buffer of size ilseq_unicode_subst_size+1. */
 static char* ilseq_unicode_subst_buffer;
 
@@ -510,8 +508,6 @@ static void subst_uc_to_mb_fallback
                     callback_arg);
 }
 
-#if HAVE_WCHAR_T
-
 /* Auxiliary variables for subst_mb_to_wc_fallback. */
 /* Converter from locale encoding to wchar_t. */
 static iconv_t subst_mb_to_wc_cd;
@@ -591,13 +587,6 @@ static void subst_wc_to_mb_fallback
                     ilseq_wchar_subst_size*4-outbytesleft,
                     callback_arg);
 }
-
-#else
-
-#define subst_mb_to_wc_fallback NULL
-#define subst_wc_to_mb_fallback NULL
-
-#endif
 
 /* Auxiliary variables for subst_mb_to_mb_fallback. */
 /* Converter from locale encoding to target encoding. */
@@ -1082,28 +1071,22 @@ int main (int argc, char* argv[])
     if (ilseq_byte_subst != NULL)
       ilseq_byte_subst_buffer = (char*)xmalloc((ilseq_byte_subst_size+1)*sizeof(char));
     if (!discard_unconvertible) {
-      #if HAVE_WCHAR_T
       if (ilseq_wchar_subst != NULL)
         ilseq_wchar_subst_buffer = (char*)xmalloc((ilseq_wchar_subst_size+1)*sizeof(char));
-      #endif
       if (ilseq_unicode_subst != NULL)
         ilseq_unicode_subst_buffer = (char*)xmalloc((ilseq_unicode_subst_size+1)*sizeof(char));
       if (ilseq_byte_subst != NULL) {
         subst_mb_to_uc_cd = iconv_open("UCS-4-INTERNAL","char");
         subst_mb_to_uc_temp_buffer = (unsigned int*)xmalloc(ilseq_byte_subst_size*sizeof(unsigned int));
-        #if HAVE_WCHAR_T
         subst_mb_to_wc_cd = iconv_open("wchar_t","char");
         subst_mb_to_wc_temp_buffer = (wchar_t*)xmalloc(ilseq_byte_subst_size*sizeof(wchar_t));
-        #endif
         subst_mb_to_mb_cd = iconv_open(tocode,"char");
         subst_mb_to_mb_temp_buffer = (char*)xmalloc(ilseq_byte_subst_size*4);
       }
-      #if HAVE_WCHAR_T
       if (ilseq_wchar_subst != NULL) {
         subst_wc_to_mb_cd = iconv_open(tocode,"char");
         subst_wc_to_mb_temp_buffer = (char*)xmalloc(ilseq_wchar_subst_size*4);
       }
-      #endif
       if (ilseq_unicode_subst != NULL) {
         subst_uc_to_mb_cd = iconv_open(tocode,"char");
         subst_uc_to_mb_temp_buffer = (char*)xmalloc(ilseq_unicode_subst_size*4);
