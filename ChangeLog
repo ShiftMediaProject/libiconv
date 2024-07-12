@@ -1,5 +1,10 @@
 2024-07-12  Bruno Haible  <bruno@clisp.org>
 
+	Switch to automake 1.17.
+	* autogen.sh: Update comment.
+
+2024-07-12  Bruno Haible  <bruno@clisp.org>
+
 	Assume wchar_t.
 	* include/iconv.h.in (iconv_wchar_mb_to_wc_fallback,
 	iconv_wchar_wc_to_mb_fallback): Assume HAVE_WCHAR_T is 1.
