@@ -197,6 +197,7 @@
 /srcm4/musl.m4
 /srcm4/nls.m4
 /srcm4/nocrash.m4
+/srcm4/off64_t.m4
 /srcm4/off_t.m4
 /srcm4/open.m4
 /srcm4/open-cloexec.m4
