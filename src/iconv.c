@@ -71,7 +71,7 @@ error (int status, int errnum, const char *message, ...)
     exit(status);
 }
 #else
-# include "error.h"
+# include <error.h>
 #endif
 
 #include "gettext.h"
