@@ -99,7 +99,16 @@ done
 for file in config.guess config.libpath config.sub install-sh libtool-reloc mkinstalldirs; do
   cp -p build-aux/$file libcharset/build-aux/$file || exit $?
 done
-for file in codeset.m4 fcntl-o.m4 lib-ld.m4 relocatable.m4 relocatable-lib.m4 visibility.m4; do
+for file in \
+  build-to-host.m4 \
+  codeset.m4 \
+  fcntl-o.m4 \
+  host-cpu-c-abi.m4 \
+  lib-ld.m4 \
+  relocatable.m4 \
+  relocatable-lib.m4 \
+  visibility.m4 \
+; do
   cp -p srcm4/$file libcharset/m4/$file || exit $?
 done
 

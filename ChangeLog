@@ -1,3 +1,8 @@
+2024-09-26  Bruno Haible  <bruno@clisp.org>
+
+	Update after gnulib changed.
+	* autogen.sh: Copy also build-to-host.m4 and host-cpu-c-abi.m4.
+
 2024-08-24  Bruno Haible  <bruno@clisp.org>
 
 	Fix shared library support in 32-bit mode on FreeBSD/powerpc64.

@@ -17,8 +17,10 @@
 /libcharset/INSTALL.generic
 /libcharset/build-aux/config.libpath
 /libcharset/build-aux/libtool-reloc
+/libcharset/m4/build-to-host.m4
 /libcharset/m4/codeset.m4
 /libcharset/m4/fcntl-o.m4
+/libcharset/m4/host-cpu-c-abi.m4
 /libcharset/m4/lib-ld.m4
 /libcharset/m4/relocatable-lib.m4
 /libcharset/m4/relocatable.m4
@@ -159,6 +161,7 @@
 /srcm4/error.m4
 /srcm4/error_h.m4
 /srcm4/extensions.m4
+/srcm4/extensions-aix.m4
 /srcm4/extern-inline.m4
 /srcm4/fcntl.m4
 /srcm4/fcntl-o.m4
@@ -183,7 +186,7 @@
 /srcm4/lib-prefix.m4
 /srcm4/libunistring-base.m4
 /srcm4/limits-h.m4
-/srcm4/locale-fr.m4
+/srcm4/locale-en.m4
 /srcm4/lstat.m4
 /srcm4/malloc.m4
 /srcm4/malloca.m4
