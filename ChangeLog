@@ -1,3 +1,16 @@
+2024-10-04  Bruno Haible  <bruno@clisp.org>
+
+	Fix undefined behaviour caused by shifting (unsigned char) << 24.
+	Reported by Tim Sweet <tsweet64@protonmail.com>
+	at <https://savannah.gnu.org/bugs/?66289>.
+	* lib/ucs4.h (ucs4_mbtowc): Cast 'unsigned char' values to ucs4_t before
+	shifting them to the left.
+	* lib/ucs4be.h (ucs4be_mbtowc): Likewise.
+	* lib/ucs4le.h (ucs4le_mbtowc): Likewise.
+	* lib/utf32.h (utf32_mbtowc): Likewise.
+	* lib/utf32be.h (utf32be_mbtowc): Likewise.
+	* lib/utf32le.h (utf32le_mbtowc): Likewise.
+
 2024-09-26  Bruno Haible  <bruno@clisp.org>
 
 	Switch to libtool 2.5.3.
