@@ -1,3 +1,13 @@
+2024-10-22  Bruno Haible  <bruno@clisp.org>
+
+	Spelling fixes.
+	From Mike Taves <mwtoews@gmail.com> in
+	<https://lists.gnu.org/archive/html/bug-gnu-libiconv/2024-10/msg00002.html>.
+	* NOTES: Fix grammar.
+	* lib/iconv_open1.h: Fix a typo in comments.
+	* lib/iso2022_jp2.h: Likewise.
+	* lib/iso2022_jpms.h: Fix English spelling in comments.
+
 2024-10-04  Bruno Haible  <bruno@clisp.org>
 
 	Fix undefined behaviour caused by shifting (unsigned char) << 24.

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 1999-2008, 2011, 2018, 2020, 2023 Free Software Foundation, Inc.
+ * Copyright (C) 1999-2008, 2011, 2018, 2020, 2023-2024 Free Software Foundation, Inc.
  * This file is part of the GNU LIBICONV Library.
  *
  * The GNU LIBICONV Library is free software; you can redistribute it
@@ -28,7 +28,7 @@
      unsigned int to_surface;
      int transliterate;
      int discard_ilseq;
-   Jumps to 'invalid' in case of errror.
+   Jumps to 'invalid' in case of error.
  */
 {
   char buf[MAX_WORD_LENGTH+9+9+1];
