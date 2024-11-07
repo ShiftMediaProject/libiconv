@@ -1,3 +1,9 @@
+2024-11-07  Bruno Haible  <bruno@clisp.org>
+
+	Update the LGPL text.
+	* COPYING.LIB: Update from
+	<https://ftp.gnu.org/gnu/Licenses/lgpl-2.1.txt>.
+
 2024-10-22  Bruno Haible  <bruno@clisp.org>
 
 	Spelling fixes.
