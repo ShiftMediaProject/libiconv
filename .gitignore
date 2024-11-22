@@ -113,6 +113,7 @@
 /srclib/stdio-read.c
 /srclib/stdio-write.c
 /srclib/stdio.in.h
+/srclib/stdlib.c
 /srclib/stdlib.in.h
 /srclib/streq.h
 /srclib/strerror-override.c
