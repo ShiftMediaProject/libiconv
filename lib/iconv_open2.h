@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 1999-2009, 2023 Free Software Foundation, Inc.
+ * Copyright (C) 1999-2024 Free Software Foundation, Inc.
  * This file is part of the GNU LIBICONV Library.
  *
  * The GNU LIBICONV Library is free software; you can redistribute it
@@ -68,6 +68,7 @@
   cd->isurface = from_surface;
   cd->osurface = to_surface;
   /* Initialize the states. */
+  memset(&cd->ibyteorder,'\0',sizeof(state_t));
   memset(&cd->istate,'\0',sizeof(state_t));
   memset(&cd->ostate,'\0',sizeof(state_t));
   /* Initialize the operation flags. */

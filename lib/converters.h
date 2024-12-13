@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 1999-2002, 2004-2011, 2016, 2022-2023 Free Software Foundation, Inc.
+ * Copyright (C) 1999-2024 Free Software Foundation, Inc.
  * This file is part of the GNU LIBICONV Library.
  *
  * The GNU LIBICONV Library is free software; you can redistribute it
@@ -99,6 +99,7 @@ struct conv_struct {
   int iindex;
   struct mbtowc_funcs ifuncs;
   unsigned int isurface;
+  state_t ibyteorder;
   state_t istate;
   /* Output (conversion unicode -> multibyte) */
   int oindex;
