@@ -1,5 +1,12 @@
 2024-12-15  Bruno Haible  <bruno@clisp.org>
 
+	Update translations.
+	* po/libiconv.pot: Update.
+	* po/*.po: Update from TP.
+	* po/LINGUAS: Add be, ka.
+
+2024-12-15  Bruno Haible  <bruno@clisp.org>
+
 	Prepare for version 1.18.
 	* configure.ac: Bump version number to 1.18.
 	* include/iconv.h.in (_LIBICONV_VERSION): Likewise.
