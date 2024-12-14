@@ -110,10 +110,8 @@ struct conv_struct {
   /* Operation flags */
   int transliterate;
   int discard_ilseq;
-  #ifndef LIBICONV_PLUG
   struct iconv_fallbacks fallbacks;
   struct iconv_hooks hooks;
-  #endif
 };
 
 /*

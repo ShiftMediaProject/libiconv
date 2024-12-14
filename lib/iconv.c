@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 1999-2008, 2011, 2016, 2018, 2020, 2022-2023 Free Software Foundation, Inc.
+ * Copyright (C) 1999-2024 Free Software Foundation, Inc.
  * This file is part of the GNU LIBICONV Library.
  *
  * The GNU LIBICONV Library is free software; you can redistribute it
@@ -280,8 +280,6 @@ int iconv_close (iconv_t icd)
   free(cd);
   return 0;
 }
-
-#ifndef LIBICONV_PLUG
 
 /*
  * Verify that a 'struct conv_struct' and a 'struct wchar_conv_struct' each
@@ -654,6 +652,4 @@ int _libiconv_version = _LIBICONV_VERSION;
 strong_alias (libiconv_open, iconv_open)
 strong_alias (libiconv, iconv)
 strong_alias (libiconv_close, iconv_close)
-#endif
-
 #endif

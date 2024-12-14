@@ -1,5 +1,15 @@
 2024-12-14  Bruno Haible  <bruno@clisp.org>
 
+	Remove left-overs of preloadable library (removed in 1.16).
+	* include/iconv.h.in: Remove LIBICONV_PLUG conditionals.
+	* lib/iconv.c: Likewise.
+	* lib/converters.h: Likewise.
+	* lib/loop_unicode.h: Likewise.
+	* lib/loop_wchar.h: Likewise.
+	* lib/iconv_open2.h: Likewise.
+
+2024-12-14  Bruno Haible  <bruno@clisp.org>
+
 	Add transliteration of Emojis.
 	Suggested by Colin Leroy-Mira <colin@colino.net> in
 	<https://savannah.gnu.org/bugs/index.php?64046>.

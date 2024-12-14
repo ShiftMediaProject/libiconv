@@ -74,7 +74,6 @@
   /* Initialize the operation flags. */
   cd->transliterate = transliterate;
   cd->discard_ilseq = discard_ilseq;
-  #ifndef LIBICONV_PLUG
   cd->fallbacks.mb_to_uc_fallback = NULL;
   cd->fallbacks.uc_to_mb_fallback = NULL;
   cd->fallbacks.mb_to_wc_fallback = NULL;
@@ -83,7 +82,6 @@
   cd->hooks.uc_hook = NULL;
   cd->hooks.wc_hook = NULL;
   cd->hooks.data = NULL;
-  #endif
   /* Initialize additional fields. */
   if (from_wchar != to_wchar) {
     struct wchar_conv_struct * wcd = (struct wchar_conv_struct *) cd;
