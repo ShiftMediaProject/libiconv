@@ -1,5 +1,14 @@
 2024-12-14  Bruno Haible  <bruno@clisp.org>
 
+	Add transliteration of Emojis.
+	Suggested by Colin Leroy-Mira <colin@colino.net> in
+	<https://savannah.gnu.org/bugs/index.php?64046>.
+	* lib/translit.def: Add transliterations from glibc's fix of
+	<https://sourceware.org/bugzilla/show_bug.cgi?id=30649>.
+	* NEWS: Mention it.
+
+2024-12-14  Bruno Haible  <bruno@clisp.org>
+
 	Improve man page.
 	* man/iconv.3: Move 4th case to be the 2nd case. Add a NOTES section,
 	based on the Linux man-pages project's iconv.3 page.
