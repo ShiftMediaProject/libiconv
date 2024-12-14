@@ -1,5 +1,10 @@
 2024-12-14  Bruno Haible  <bruno@clisp.org>
 
+	Switch to automake 1.17, part 2.
+	* Makefile.devel (AUTOMAKE, ACLOCAL): Use binary from automake 1.17.
+
+2024-12-14  Bruno Haible  <bruno@clisp.org>
+
 	Remove left-overs of preloadable library (removed in 1.16).
 	* include/iconv.h.in: Remove LIBICONV_PLUG conditionals.
 	* lib/iconv.c: Likewise.
