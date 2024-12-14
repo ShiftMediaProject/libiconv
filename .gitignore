@@ -526,6 +526,8 @@ autom4te.cache/
 /tests/table-from.exe
 /tests/table-to
 /tests/table-to.exe
+/tests/test-bom-state
+/tests/test-bom-state.exe
 /tests/test-shiftseq
 /tests/test-shiftseq.exe
 /tests/test-to-wchar
