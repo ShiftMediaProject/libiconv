@@ -1,3 +1,9 @@
+2024-12-14  Bruno Haible  <bruno@clisp.org>
+
+	Improve man page.
+	* man/iconv.3: Move 4th case to be the 2nd case. Add a NOTES section,
+	based on the Linux man-pages project's iconv.3 page.
+
 2024-12-13  Bruno Haible  <bruno@clisp.org>
 
 	Distinguish byte-order state and shift-state.
