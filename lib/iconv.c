@@ -241,7 +241,7 @@ iconv_t iconv_open (const char* tocode, const char* fromcode)
   int to_wchar;
   unsigned int to_surface;
   int transliterate;
-  int discard_ilseq;
+  unsigned int discard_ilseq;
 
 #include "iconv_open1.h"
 
@@ -303,7 +303,7 @@ int iconv_open_into (const char* tocode, const char* fromcode,
   int to_wchar;
   unsigned int to_surface;
   int transliterate;
-  int discard_ilseq;
+  unsigned int discard_ilseq;
 
 #include "iconv_open1.h"
 
@@ -338,11 +338,33 @@ int iconvctl (iconv_t icd, int request, void* argument)
     case ICONV_SET_TRANSLITERATE:
       cd->transliterate = (*(const int *)argument ? 1 : 0);
       return 0;
+    case ICONV_GET_DISCARD_INVALID:
+      *(int *)argument = (cd->discard_ilseq & DISCARD_INVALID ? 1 : 0);
+      return 0;
+    case ICONV_SET_DISCARD_INVALID:
+      if (*(const int *)argument)
+        cd->discard_ilseq |= DISCARD_INVALID;
+      else
+        cd->discard_ilseq &= ~DISCARD_INVALID;
+      return 0;
+    case ICONV_GET_DISCARD_NON_IDENTICAL:
+      *(int *)argument = (cd->discard_ilseq & DISCARD_UNCONVERTIBLE ? 1 : 0);
+      return 0;
+    case ICONV_SET_DISCARD_NON_IDENTICAL:
+      if (*(const int *)argument)
+        cd->discard_ilseq |= DISCARD_UNCONVERTIBLE;
+      else
+        cd->discard_ilseq &= ~DISCARD_UNCONVERTIBLE;
+      return 0;
     case ICONV_GET_DISCARD_ILSEQ:
-      *(int *)argument = cd->discard_ilseq;
+      *(int *)argument =
+        ((DISCARD_INVALID | DISCARD_UNCONVERTIBLE) & ~ cd->discard_ilseq) == 0;
       return 0;
     case ICONV_SET_DISCARD_ILSEQ:
-      cd->discard_ilseq = (*(const int *)argument ? 1 : 0);
+      if (*(const int *)argument)
+        cd->discard_ilseq |= DISCARD_INVALID | DISCARD_UNCONVERTIBLE;
+      else
+        cd->discard_ilseq &= ~(DISCARD_INVALID | DISCARD_UNCONVERTIBLE);
       return 0;
     case ICONV_SET_HOOKS:
       if (argument != NULL) {

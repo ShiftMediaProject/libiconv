@@ -198,17 +198,21 @@ struct iconv_fallbacks {
 #define ICONV_SURFACE_EBCDIC_ZOS_UNIX  1
 
 /* Requests for iconvctl. */
-#define ICONV_TRIVIALP            0  /* int *argument */
-#define ICONV_GET_TRANSLITERATE   1  /* int *argument */
-#define ICONV_SET_TRANSLITERATE   2  /* const int *argument */
-#define ICONV_GET_DISCARD_ILSEQ   3  /* int *argument */
-#define ICONV_SET_DISCARD_ILSEQ   4  /* const int *argument */
-#define ICONV_SET_HOOKS           5  /* const struct iconv_hooks *argument */
-#define ICONV_SET_FALLBACKS       6  /* const struct iconv_fallbacks *argument */
-#define ICONV_GET_FROM_SURFACE    7  /* unsigned int *argument */
-#define ICONV_SET_FROM_SURFACE    8  /* const unsigned int *argument */
-#define ICONV_GET_TO_SURFACE      9  /* unsigned int *argument */
-#define ICONV_SET_TO_SURFACE     10  /* const unsigned int *argument */
+#define ICONV_TRIVIALP                    0  /* int *argument */
+#define ICONV_GET_TRANSLITERATE           1  /* int *argument */
+#define ICONV_SET_TRANSLITERATE           2  /* const int *argument */
+#define ICONV_GET_DISCARD_ILSEQ           3  /* int *argument */
+#define ICONV_SET_DISCARD_ILSEQ           4  /* const int *argument */
+#define ICONV_SET_HOOKS                   5  /* const struct iconv_hooks *argument */
+#define ICONV_SET_FALLBACKS               6  /* const struct iconv_fallbacks *argument */
+#define ICONV_GET_FROM_SURFACE            7  /* unsigned int *argument */
+#define ICONV_SET_FROM_SURFACE            8  /* const unsigned int *argument */
+#define ICONV_GET_TO_SURFACE              9  /* unsigned int *argument */
+#define ICONV_SET_TO_SURFACE             10  /* const unsigned int *argument */
+#define ICONV_GET_DISCARD_INVALID        11  /* int *argument */
+#define ICONV_SET_DISCARD_INVALID        12  /* const int *argument */
+#define ICONV_GET_DISCARD_NON_IDENTICAL  13  /* int *argument */
+#define ICONV_SET_DISCARD_NON_IDENTICAL  14  /* const int *argument */
 
 /* Listing of locale independent encodings. */
 #define iconvlist libiconvlist

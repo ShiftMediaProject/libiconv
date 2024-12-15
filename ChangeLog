@@ -1,5 +1,46 @@
 2024-12-15  Bruno Haible  <bruno@clisp.org>
 
+	Implement the //NON_IDENTICAL_DISCARD suffix from POSIX:2024.
+	* include/iconv.h.in (ICONV_GET_DISCARD_INVALID,
+	ICONV_SET_DISCARD_INVALID, ICONV_GET_DISCARD_NON_IDENTICAL,
+	ICONV_SET_DISCARD_NON_IDENTICAL): New macros.
+	* lib/converters.h (struct conv_struct): Change type of discard_ilseq to
+	'unsigned int'.
+	(DISCARD_INVALID, DISCARD_UNCONVERTIBLE): New macros.
+	* lib/iconv.c (iconv_open, iconv_open_into): Change type of
+	discard_ilseq to 'unsigned int'.
+	(iconvctl): Implement ICONV_GET_DISCARD_INVALID,
+	ICONV_SET_DISCARD_INVALID, ICONV_GET_DISCARD_NON_IDENTICAL,
+	ICONV_SET_DISCARD_NON_IDENTICAL. Change the implementation of
+	ICONV_GET_DISCARD_ILSEQ, ICONV_SET_DISCARD_ILSEQ to test/set both bits.
+	* lib/iconv_open1.h: Update comment. Recognize //NON_IDENTICAL_DISCARD.
+	* lib/iconv_open2.h: Update comment.
+	* lib/loop_unicode.h (mb_to_uc_write_replacement): Test the
+	DISCARD_UNCONVERTIBLE bit of discard_ilseq.
+	(unicode_loop_convert): Test the respective bit of discard_ilseq.
+	(unicode_loop_reset): Test the DISCARD_UNCONVERTIBLE bit of
+	discard_ilseq.
+	* lib/loop_wchar.h (wchar_from_loop_convert, wchar_to_loop_convert):
+	Test the DISCARD_INVALID bit of discard_ilseq.
+	* man/iconv_open.3: Mention the //NON_IDENTICAL_DISCARD suffix. Mark as
+	conforming to POSIX:2024.
+	* man/iconv.3: Likewise.
+	* man/iconv_close.3: Mark as conforming to POSIX:2024.
+	* man/iconv.1: Likewise.
+	* man/iconvctl.3: Document ICONV_GET_DISCARD_INVALID,
+	ICONV_SET_DISCARD_INVALID, ICONV_GET_DISCARD_NON_IDENTICAL,
+	ICONV_SET_DISCARD_NON_IDENTICAL. Revise the description of
+	ICONV_GET_DISCARD_ILSEQ, ICONV_SET_DISCARD_ILSEQ.
+	* tests/test-discard.c (test_default, test_translit, test_ignore,
+	test_ignore_translit): Test also the ICONV_GET_DISCARD_INVALID,
+	ICONV_GET_DISCARD_NON_IDENTICAL accessors.
+	(test_nid, test_nid_translit, test_invd, test_invd_translit): New
+	functions.
+	(main): Add test cases with //NON_IDENTICAL_DISCARD suffix.
+	* NEWS: Mention the change.
+
+2024-12-15  Bruno Haible  <bruno@clisp.org>
+
 	Support multiple suffixes in iconv_open, like glibc does.
 	* lib/iconv_open1.h: Use a loop when looking for the common suffixes.
 	* tests/test-discard.c: New file.

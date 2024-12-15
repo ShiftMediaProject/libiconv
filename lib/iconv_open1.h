@@ -27,7 +27,7 @@
      int to_wchar;
      unsigned int to_surface;
      int transliterate;
-     int discard_ilseq;
+     unsigned int discard_ilseq;
    Jumps to 'invalid' in case of error.
  */
 {
@@ -65,6 +65,7 @@
       char *sp = bp;
       int parsed_translit = 0;
       int parsed_ignore = 0;
+      int parsed_non_identical_discard = 0;
       for (;;) {
         if (sp-buf > 9 && memcmp(sp-9,"/TRANSLIT",9)==0) {
           sp = sp - 9;
@@ -72,6 +73,9 @@
         } else if (sp-buf > 7 && memcmp(sp-7,"/IGNORE",7)==0) {
           sp = sp - 7;
           parsed_ignore = 1;
+        } else if (sp-buf > 22 && memcmp(sp-22,"/NON_IDENTICAL_DISCARD",22)==0) {
+          sp = sp - 22;
+          parsed_non_identical_discard = 1;
         } else
           break;
         if (sp > buf && sp[-1] == '/')
@@ -88,7 +92,9 @@
       if (parsed_translit)
         transliterate = 1;
       if (parsed_ignore)
-        discard_ilseq = 1;
+        discard_ilseq |= DISCARD_INVALID | DISCARD_UNCONVERTIBLE;
+      if (parsed_non_identical_discard)
+        discard_ilseq |= DISCARD_UNCONVERTIBLE;
       break;
     }
     if (buf[0] == '\0') {
@@ -172,6 +178,7 @@
       char *sp = bp;
       int parsed_translit = 0;
       int parsed_ignore = 0;
+      int parsed_non_identical_discard = 0;
       for (;;) {
         if (sp-buf > 9 && memcmp(sp-9,"/TRANSLIT",9)==0) {
           sp = sp - 9;
@@ -179,6 +186,9 @@
         } else if (sp-buf > 7 && memcmp(sp-7,"/IGNORE",7)==0) {
           sp = sp - 7;
           parsed_ignore = 1;
+        } else if (sp-buf > 22 && memcmp(sp-22,"/NON_IDENTICAL_DISCARD",22)==0) {
+          sp = sp - 22;
+          parsed_non_identical_discard = 1;
         } else
           break;
         if (sp > buf && sp[-1] == '/')
@@ -195,7 +205,9 @@
       if (parsed_translit)
         transliterate = 1;
       if (parsed_ignore)
-        discard_ilseq = 1;
+        discard_ilseq |= DISCARD_INVALID | DISCARD_UNCONVERTIBLE;
+      if (parsed_non_identical_discard)
+        discard_ilseq |= DISCARD_UNCONVERTIBLE;
       break;
     }
     if (buf[0] == '\0') {

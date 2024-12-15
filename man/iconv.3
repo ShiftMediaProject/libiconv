@@ -9,7 +9,7 @@
 .\"   GNU glibc-2 source code and manual
 .\"   OpenGroup's Single Unix specification http://www.UNIX-systems.org/online.html
 .\"
-.TH ICONV 3  "December 14, 2024" "GNU"
+.TH ICONV 3  "December 15, 2024" "GNU"
 .SH NAME
 iconv \- perform character set conversion
 .SH SYNOPSIS
@@ -49,8 +49,8 @@ translated to the character encoding of the output.
 This condition depends on the implementation and on the conversion
 descriptor.
 In the GNU C library and GNU libiconv, if \fIcd\fP was created without the
-suffix \fB//TRANSLIT\fP or \fB//IGNORE\fP, the conversion is strict: lossy
-conversions produce this condition.
+suffix \fB//TRANSLIT\fP or \fB//IGNORE\fP or \fB//NON_IDENTICAL_DISCARD\fP,
+the conversion is strict: lossy conversions produce this condition.
 If the suffix \fB//TRANSLIT\fP was specified, transliteration can avoid this
 condition in some cases.
 In the musl C library, this condition cannot occur because a conversion to
@@ -104,7 +104,7 @@ An invalid multibyte sequence has been encountered in the input.
 .B EINVAL
 An incomplete multibyte sequence has been encountered in the input.
 .SH "CONFORMING TO"
-POSIX:2001
+POSIX:2024
 .SH NOTES
 In each series of calls to the \fBiconv\fP function,
 the last should be one with \fIinbuf\fP or \fI*inbuf\fP equal to NULL,

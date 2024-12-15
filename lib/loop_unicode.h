@@ -214,7 +214,7 @@ static void mb_to_uc_write_replacement (const unsigned int *buf, size_t buflen,
         if (outcount != RET_ILUNI)
           goto outcount_ok;
       }
-      if (cd->discard_ilseq) {
+      if (cd->discard_ilseq & DISCARD_UNCONVERTIBLE) {
         outcount = 0;
         goto outcount_ok;
       } else if (cd->fallbacks.uc_to_mb_fallback != NULL) {
@@ -276,7 +276,7 @@ static size_t unicode_loop_convert (iconv_t icd,
       if ((unsigned int)(-1-incount) % 2 == (unsigned int)(-1-RET_ILSEQ) % 2) {
         /* Case 1: invalid input, possibly after a shift sequence */
         incount = DECODE_SHIFT_ILSEQ(incount);
-        if (cd->discard_ilseq) {
+        if (cd->discard_ilseq & DISCARD_INVALID) {
           switch (cd->iindex) {
             case ei_ucs4: case ei_ucs4be: case ei_ucs4le:
             case ei_utf32: case ei_utf32be: case ei_utf32le:
@@ -359,7 +359,7 @@ static size_t unicode_loop_convert (iconv_t icd,
         if (outcount != RET_ILUNI)
           goto outcount_ok;
       }
-      if (cd->discard_ilseq) {
+      if (cd->discard_ilseq & DISCARD_UNCONVERTIBLE) {
         outcount = 0;
         goto outcount_ok;
       } else if (cd->fallbacks.uc_to_mb_fallback != NULL) {
@@ -441,7 +441,7 @@ static size_t unicode_loop_reset (iconv_t icd,
           if (outcount != RET_ILUNI)
             goto outcount_ok;
         }
-        if (cd->discard_ilseq) {
+        if (cd->discard_ilseq & DISCARD_UNCONVERTIBLE) {
           outcount = 0;
           goto outcount_ok;
         } else if (cd->fallbacks.uc_to_mb_fallback != NULL) {

@@ -149,7 +149,7 @@ static size_t wchar_from_loop_convert (iconv_t icd,
       size_t count = wcrtomb(buf+bufcount,*inptr,&state);
       if (count == (size_t)(-1)) {
         /* Invalid input. */
-        if (wcd->parent.discard_ilseq) {
+        if (wcd->parent.discard_ilseq & DISCARD_INVALID) {
           count = 0;
         } else if (wcd->parent.fallbacks.wc_to_mb_fallback != NULL) {
           /* Drop the contents of buf[] accumulated so far, and instead
@@ -346,7 +346,7 @@ static size_t wchar_to_loop_convert (iconv_t icd,
         } else {
           if (res == (size_t)(-1)) {
             /* Invalid input. */
-            if (wcd->parent.discard_ilseq) {
+            if (wcd->parent.discard_ilseq & DISCARD_INVALID) {
             } else if (wcd->parent.fallbacks.mb_to_wc_fallback != NULL) {
               /* Drop the contents of buf[] accumulated so far, and instead
                  pass all queued chars to the fallback handler. */

@@ -27,7 +27,7 @@
      int to_wchar;
      unsigned int to_surface;
      int transliterate;
-     int discard_ilseq;
+     unsigned int discard_ilseq;
    Output: none.
    Side effects: Fills cd.
  */

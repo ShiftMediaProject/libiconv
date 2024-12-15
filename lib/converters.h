@@ -109,10 +109,17 @@ struct conv_struct {
   state_t ostate;
   /* Operation flags */
   int transliterate;
-  int discard_ilseq;
+  unsigned int discard_ilseq;
   struct iconv_fallbacks fallbacks;
   struct iconv_hooks hooks;
 };
+
+/* The bits in discard_ilseq.  */
+/* Bit mask for discard invalid multibyte sequences in the input. */
+#define DISCARD_INVALID        2U
+/* Bit mask for discard characters that cannot be represented in the target
+   character set. */
+#define DISCARD_UNCONVERTIBLE  1U
 
 /*
  * Include all the converters.
