@@ -1,5 +1,16 @@
 2024-12-15  Bruno Haible  <bruno@clisp.org>
 
+	Prepare for version 1.18.
+	* configure.ac: Bump version number to 1.18.
+	* include/iconv.h.in (_LIBICONV_VERSION): Likewise.
+	* lib/Makefile.in (LIBICONV_VERSION_INFO): Bump to 9:0:7.
+	* src/iconv.c (print_version): Update copyright year.
+	* windows/iconv.rc: Likewise.
+	* windows/libiconv.rc: Likewise.
+	* README: Update download link.
+
+2024-12-15  Bruno Haible  <bruno@clisp.org>
+
 	Use the newest gettext release.
 	* po/Makefile.in.in: Upgrade to gettext-0.23, keeping the change
 		2019-01-27  Bruno Haible  <bruno@clisp.org>
