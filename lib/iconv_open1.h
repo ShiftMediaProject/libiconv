@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 1999-2008, 2011, 2018, 2020, 2023-2024 Free Software Foundation, Inc.
+ * Copyright (C) 1999-2024 Free Software Foundation, Inc.
  * This file is part of the GNU LIBICONV Library.
  *
  * The GNU LIBICONV Library is free software; you can redistribute it
@@ -65,20 +65,25 @@
       char *sp = bp;
       int parsed_translit = 0;
       int parsed_ignore = 0;
-      if (sp-buf > 9 && memcmp(sp-9,"/TRANSLIT",9)==0) {
-        sp = sp - 9;
-        parsed_translit = 1;
-      } else if (sp-buf > 7 && memcmp(sp-7,"/IGNORE",7)==0) {
-        sp = sp - 7;
-        parsed_ignore = 1;
+      for (;;) {
+        if (sp-buf > 9 && memcmp(sp-9,"/TRANSLIT",9)==0) {
+          sp = sp - 9;
+          parsed_translit = 1;
+        } else if (sp-buf > 7 && memcmp(sp-7,"/IGNORE",7)==0) {
+          sp = sp - 7;
+          parsed_ignore = 1;
+        } else
+          break;
+        if (sp > buf && sp[-1] == '/')
+          sp = sp - 1;
       }
-      if (sp > buf && memcmp(sp-1,"/",1) == 0) {
+      if (sp > buf && sp[-1] == '/') {
         bp = sp - 1;
       } else if (sp-buf >= 9 && memcmp(sp-9,"/ZOS_UNIX",9)==0) {
         bp = sp - 9;
         to_surface = ICONV_SURFACE_EBCDIC_ZOS_UNIX;
       } else
-        break;
+        bp = sp;
       *bp = '\0';
       if (parsed_translit)
         transliterate = 1;
@@ -167,20 +172,25 @@
       char *sp = bp;
       int parsed_translit = 0;
       int parsed_ignore = 0;
-      if (sp-buf > 9 && memcmp(sp-9,"/TRANSLIT",9)==0) {
-        sp = sp - 9;
-        parsed_translit = 1;
-      } else if (sp-buf > 7 && memcmp(sp-7,"/IGNORE",7)==0) {
-        sp = sp - 7;
-        parsed_ignore = 1;
+      for (;;) {
+        if (sp-buf > 9 && memcmp(sp-9,"/TRANSLIT",9)==0) {
+          sp = sp - 9;
+          parsed_translit = 1;
+        } else if (sp-buf > 7 && memcmp(sp-7,"/IGNORE",7)==0) {
+          sp = sp - 7;
+          parsed_ignore = 1;
+        } else
+          break;
+        if (sp > buf && sp[-1] == '/')
+          sp = sp - 1;
       }
-      if (sp > buf && memcmp(sp-1,"/",1) == 0) {
+      if (sp > buf && sp[-1] == '/') {
         bp = sp - 1;
       } else if (sp-buf >= 9 && memcmp(sp-9,"/ZOS_UNIX",9)==0) {
         bp = sp - 9;
         from_surface = ICONV_SURFACE_EBCDIC_ZOS_UNIX;
       } else
-        break;
+        bp = sp;
       *bp = '\0';
       if (parsed_translit)
         transliterate = 1;

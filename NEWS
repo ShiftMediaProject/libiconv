@@ -1,5 +1,7 @@
 New in 1.18:
 * Many more transliterations, in particular also of Emoji characters.
+* The iconv_open function and the iconv program now support multiple suffixes,
+  such as //TRANSLIT//IGNORE, not only one.
 * GB18030 is now an alias for GB18030:2005. A new converter for GB18030:2022
   is added. Since this encoding merely cleans up a few private-use-area
   mappings, you can continue to use the GB18030 converter, for backward

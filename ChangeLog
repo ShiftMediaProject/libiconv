@@ -1,3 +1,14 @@
+2024-12-15  Bruno Haible  <bruno@clisp.org>
+
+	Support multiple suffixes in iconv_open, like glibc does.
+	* lib/iconv_open1.h: Use a loop when looking for the common suffixes.
+	* tests/test-discard.c: New file.
+	* tests/Makefile.in (check): Run test-discard.
+	(test-discard, test-discard.@OBJEXT@): New targets.
+	(clean): Remove test-discard.
+	(SOURCE_FILES): Add test-discard.c.
+	* NEWS: Mention the change.
+
 2024-12-14  Bruno Haible  <bruno@clisp.org>
 
 	Switch to automake 1.17, part 2.
