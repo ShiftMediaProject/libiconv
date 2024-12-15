@@ -174,6 +174,7 @@
 /srcm4/gettext.m4
 /srcm4/gnulib-common.m4
 /srcm4/gnulib-comp.m4
+/srcm4/gnulib-i18n.m4
 /srcm4/gnulib-tool.m4
 /srcm4/host-cpu-c-abi.m4
 /srcm4/iconv.m4
