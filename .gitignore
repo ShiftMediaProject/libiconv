@@ -507,7 +507,6 @@ autom4te.cache/
 /src/*.stackdump
 # Erased by po/Makefile.
 /po/*.mo
-/po/remove-potcdate.sed
 /po/stamp-poT
 /po/core
 /po/core.*

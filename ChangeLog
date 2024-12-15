@@ -1,5 +1,14 @@
 2024-12-15  Bruno Haible  <bruno@clisp.org>
 
+	Use the newest gettext release.
+	* po/Makefile.in.in: Upgrade to gettext-0.23, keeping the change
+		2019-01-27  Bruno Haible  <bruno@clisp.org>
+		Accommodate a shell that is not in /bin/sh.
+		* po/Makefile.in.in (SHELL): Use the value found by configure.
+	* po/*: Upgrade to gettext-0.23 as well.
+
+2024-12-15  Bruno Haible  <bruno@clisp.org>
+
 	Implement the //NON_IDENTICAL_DISCARD suffix from POSIX:2024.
 	* include/iconv.h.in (ICONV_GET_DISCARD_INVALID,
 	ICONV_SET_DISCARD_INVALID, ICONV_GET_DISCARD_NON_IDENTICAL,
