@@ -3,7 +3,7 @@
   <ItemGroup>
     <ClCompile Include="..\libcharset\lib\localcharset.c" />
     <ClCompile Include="..\lib\iconv.c" />
-    <ClCompile Include="..\lib\relocatable.c" />
+    <ClCompile Include="..\lib\compat.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\lib\aliases2.h" />
@@ -144,7 +144,8 @@
     <ClInclude Include="..\lib\flushwc.h" />
     <ClInclude Include="..\lib\gb12345.h" />
     <ClInclude Include="..\lib\gb12345ext.h" />
-    <ClInclude Include="..\lib\gb18030.h" />
+    <ClInclude Include="..\lib\gb18030_2005.h" />
+    <ClInclude Include="..\lib\gb18030_2022.h" />
     <ClInclude Include="..\lib\gb18030ext.h" />
     <ClInclude Include="..\lib\gb18030uni.h" />
     <ClInclude Include="..\lib\gb2312.h" />
@@ -219,7 +220,6 @@
     <ClInclude Include="..\lib\mulelao.h" />
     <ClInclude Include="..\lib\nextstep.h" />
     <ClInclude Include="..\lib\pt154.h" />
-    <ClInclude Include="..\lib\relocatable.h" />
     <ClInclude Include="..\lib\riscos1.h" />
     <ClInclude Include="..\lib\rk1048.h" />
     <ClInclude Include="..\lib\shift_jisx0213.h" />

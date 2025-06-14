@@ -7,7 +7,7 @@
     <ClCompile Include="..\libcharset\lib\localcharset.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\relocatable.c">
+    <ClCompile Include="..\lib\compat.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -270,9 +270,6 @@
     <ClInclude Include="..\lib\gb12345ext.h">
       <Filter>Header Files\lib</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\gb18030.h">
-      <Filter>Header Files\lib</Filter>
-    </ClInclude>
     <ClInclude Include="..\lib\gb18030ext.h">
       <Filter>Header Files\lib</Filter>
     </ClInclude>
@@ -496,9 +493,6 @@
       <Filter>Header Files\lib</Filter>
     </ClInclude>
     <ClInclude Include="..\lib\pt154.h">
-      <Filter>Header Files\lib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\lib\relocatable.h">
       <Filter>Header Files\lib</Filter>
     </ClInclude>
     <ClInclude Include="..\lib\riscos1.h">
@@ -769,6 +763,13 @@
       <Filter>Header Files\lib</Filter>
     </ClInclude>
     <ClInclude Include="..\lib\ebcdic16804.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\compat.h" />
+    <ClInclude Include="..\lib\gb18030_2022.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\gb18030_2005.h">
       <Filter>Header Files\lib</Filter>
     </ClInclude>
   </ItemGroup>
