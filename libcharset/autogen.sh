@@ -2,9 +2,9 @@
 # Convenience script for regenerating all aclocal.m4, config.h.in, Makefile.in,
 # configure files with new versions of autoconf or automake.
 #
-# This script requires autoconf-2.63..2.71 and automake-1.11..1.16 in the PATH.
+# This script requires autoconf-2.63..2.71 and automake-1.11..1.17 in the PATH.
 
-# Copyright (C) 2003-2007, 2009-2010, 2016, 2020-2021 Free Software Foundation, Inc.
+# Copyright (C) 2003-2024 Free Software Foundation, Inc.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -19,6 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-# Usage: ./autogen.sh
+# Prerequisite: ./autopull.sh
+# Usage:        ./autogen.sh
 
 make -f Makefile.devel totally-clean all
