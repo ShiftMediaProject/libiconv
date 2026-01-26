@@ -6,6 +6,9 @@ ShiftMediaProject libiconv
 [![GitHub issues](https://img.shields.io/github/issues/ShiftMediaProject/libiconv.svg)](https://github.com/ShiftMediaProject/libiconv/issues)
 [![license](https://img.shields.io/github/license/ShiftMediaProject/libiconv.svg)](https://github.com/ShiftMediaProject/libiconv)
 [![donate](https://img.shields.io/badge/donate-link-brightgreen.svg)](https://shiftmediaproject.github.io/8-donate/)
+
+Due to limited time and resources this project is no longer maintained and is provided as an archive only reference.
+
 ## ShiftMediaProject
 
 Shift Media Project aims to provide native Windows development libraries for libiconv and associated dependencies to support simpler creation and debugging of rich media content directly within Visual Studio. [https://shiftmediaproject.github.io/](https://shiftmediaproject.github.io/)
